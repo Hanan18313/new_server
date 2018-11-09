@@ -4,7 +4,7 @@
     "mysql_user":"root",
     "mysql_password":"437612langjie",
     "mysql_port":"3306",
-    "mysql_host_":"localhost",
+    "mysql_host_":"114.55.104.10",
     "mysql_user_":"root",
     "mysql_password_":"114.55.104.101",
     "mysql_port_":"3306"
