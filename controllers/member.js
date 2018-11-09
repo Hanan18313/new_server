@@ -22,9 +22,9 @@ this.search_member = function(req,res){
 }
 this.member_update = function(req,res){
     var id = req.body.data.id,
-        signIn_id = req.body.data.signIn_id,
-        isLunch = req.body.data.is_lunch
-        ModMember.member_update(id,signIn_id,isLunch,function(result){
-            res.send(result)
-        })
+    signIn_id = req.body.data.signIn_id,
+    isLunch = req.body.data.is_lunch
+    ModMember.member_update(id,signIn_id,isLunch,function(result){
+        res.send(result)
+    })
 }

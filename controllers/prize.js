@@ -52,23 +52,22 @@ this.prize_add = function(req,res){
     if(Number(number) == 1){
         //new Promise((resolve,reject) => {
             ModPrize.prize_add(prize_name,price,prize_info,imgUrl,function(result){
-                 res.send(result)
-                //resolve(result)
+                var prize_id = result.insertId
+                ModPrize.draw_add(prize_id,function(result){
+                    res.send(result)
+                })
              })
-      //  })
-        // .then(() =>{
-        //     ModPrize.draw_add(function(result){
-        //         resolve(result)
-        //     })
-        // }).then(result =>{
-        //     console.log(result)
-        //     res.send(result)
-        // })
     }else{
         new Promise((resolve,reject) => {
             for(let i = 0; i< Number(number); i++){
-                ModPrize.prize_add(prize_name,prize_id,price,prize_info,imgUrl,function(result){
-                    resolve(result)
+                ModPrize.prize_add(prize_name,price,prize_info,imgUrl,function(result){
+                    var prize_id = result.insertId
+                    // resolve(result)
+                    // console.log(result)
+                    ModPrize.draw_add(prize_id,function(result){
+                        console.log('11')
+                        resolve(result)
+                    })
                 })
             }
         }).then(result => {
