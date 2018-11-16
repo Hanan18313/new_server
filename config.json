@@ -1,11 +1,11 @@
 {
     "imgUrl":"https://mp.langjie.com/images/",
-   "mysql_host":"114.55.104.101",
-   "mysql_user":"root",
-   "mysql_password":"437612langjie",
-   "mysql_port":"3306",
-   "mysql_host_":"114.55.104.101",
-   "mysql_user_":"root",
-   "mysql_password_":"437612langjie",
-   "mysql_port_":"3306"
+    "mysql_host":"114.55.104.101",
+    "mysql_user":"root",
+    "mysql_password":"437612langjie",
+    "mysql_port":"3306",
+    "mysql_host_":"114.55.104.101",
+    "mysql_user_":"root",
+    "mysql_password_":"437612langjie",
+    "mysql_port_":"3306"
 }
