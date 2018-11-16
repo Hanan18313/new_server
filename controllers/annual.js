@@ -56,12 +56,10 @@ this.add_annual_vip_basic = function(req,res){
 this.add_annual_member = function(req,res){
     var unionid = req.body.unionid
     var openid = req.body.value.open_id
-    console.log(openid)
     if(unionid.length > 0){
         Mod_annual.get_vip_basic(unionid,function(result){
             if(result.length != 0){
                 Mod_annual.get_annual_vip_basic(openid,function(result){
-                    console.log(result)
                     var name = result[0].name;
                     var phone = result[0].phone;
                     var portrait = result[0].portrait;
@@ -80,9 +78,7 @@ this.add_annual_member = function(req,res){
                     }
                 })
             }else{
-                console.log('11111111')
                 Mod_annual.get_annual_vip_basic(openid,function(result){
-                    console.log(result)
                     if(result.length != 0){
                         var name = result[0].name;
                         var phone = result[0].phone;
@@ -103,7 +99,6 @@ this.add_annual_member = function(req,res){
             }
         })
     }else{
-        console.log('222')
         Mod_annual.get_annual_vip_basic(openid,function(result){
             if(result.length != 0){
                 var name = result[0].name;
