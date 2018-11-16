@@ -1,7 +1,7 @@
 //奖品list
 this.prize_list = function(pageNum,pageSize,callback){
     var startPage = Number((pageNum-1)*pageSize)
-    let str = 'SELECT * FROM prize_manage limit '+startPage+','+pageSize;
+    let str = 'SELECT * FROM annual_prize limit '+startPage+','+pageSize;
     CON(str,function(err,result){
         if(err){
             LOG(err)
@@ -11,7 +11,7 @@ this.prize_list = function(pageNum,pageSize,callback){
     })
 }
 this.prize_total = function(callback){
-    let str = 'SELECT COUNT(*) FROM prize_manage';
+    let str = 'SELECT COUNT(*) FROM annual_prize';
     CON(str,function(err,result){
         if(err){
             LOG(err)
@@ -21,7 +21,7 @@ this.prize_total = function(callback){
     })
 }
 this.prize_info = function(prize_id,callback){
-    let str = 'SELECT * FROM prize_manage WHERE id = "'+prize_id+'"';
+    let str = 'SELECT * FROM annual_prize WHERE id = "'+prize_id+'"';
     CON(str,function(err,result){
         if(err){
             LOG(err)
@@ -31,7 +31,7 @@ this.prize_info = function(prize_id,callback){
     })
 }
 this.prize_add = function(prize_name,price,prize_info,imgUrl,callback){
-    let str = 'INSERT INTO prize_manage(prize_name,price,prize_info,imgUrl,round) VALUE("'+prize_name+'","'+price+'","'+prize_info+'","'+imgUrl+'","第三轮")';
+    let str = 'INSERT INTO annual_prize(prize_name,price,prize_info,imgUrl,prize_class) VALUE("'+prize_name+'","'+price+'","'+prize_info+'","'+imgUrl+'","员工类")';
     CON(str,function(err,result){
         if(err){
             LOG(err)
@@ -42,7 +42,7 @@ this.prize_add = function(prize_name,price,prize_info,imgUrl,callback){
 }
 //抽奖表
 this.draw_add = function(prize_id,callback){
-    let str = 'INSERT INTO draw(prize_id) VALUE("'+prize_id+'")';
+    let str = 'INSERT INTO annual_draw(prize_id) VALUE("'+prize_id+'")';
     CON(str,function(err,result){
         if(err){
             LOG(err)
@@ -51,8 +51,8 @@ this.draw_add = function(prize_id,callback){
         }
     })
 }
-this.prize_edit = function(prize_id,prize_name,price,prize_info,round,imgUrl,callback){
-    let str = 'UPDATE prize_manage SET prize_name = "'+prize_name+'",price = "'+price+'", round = "'+round+'",prize_info = "'+prize_info+'",imgUrl = "'+imgUrl+'" WHERE id = "'+prize_id+'"';
+this.prize_edit = function(prize_id,prize_name,price,prize_info,prize_class,imgUrl,callback){
+    let str = 'UPDATE annual_prize SET prize_name = "'+prize_name+'",price = "'+price+'", prize_class = "'+prize_class+'",prize_info = "'+prize_info+'",imgUrl = "'+imgUrl+'" WHERE id = "'+prize_id+'"';
     CON(str,function(err,result){
         if(err){
             LOG(err)
@@ -62,7 +62,7 @@ this.prize_edit = function(prize_id,prize_name,price,prize_info,round,imgUrl,cal
     })
 }
 this.prize_delete = function(prize_id,callback){
-    let str = 'DELETE FROM prize_manage WHERE id = "'+prize_id+'"';
+    let str = 'DELETE FROM annual_prize WHERE id = "'+prize_id+'"';
     CON(str,function(err,result){
         if(err){
             LOG(err)

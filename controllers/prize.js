@@ -65,7 +65,6 @@ this.prize_add = function(req,res){
                     // resolve(result)
                     // console.log(result)
                     ModPrize.draw_add(prize_id,function(result){
-                        console.log('11')
                         resolve(result)
                     })
                 })
@@ -81,9 +80,9 @@ this.prize_edit = function(req,res){
     var prize_name = params.prize_name;
     var price = params.price
     var prize_info = params.prize_info
-    var round = params.round
+    var prize_class = params.prize_class
     var imgUrl = params.imgUrl
-    ModPrize.prize_edit(prize_id,prize_name,price,prize_info,round,imgUrl,function(result){
+    ModPrize.prize_edit(prize_id,prize_name,price,prize_info,prize_class,imgUrl,function(result){
         res.send(result)
     })
 }

@@ -10,11 +10,15 @@ var request = require('request')
 var bodyParser = require('body-parser');
 var Session = require('express-session')
 var log4js = require('./logs/start_log.js');
+var dao = require('./dao/dao.js')
+//var RedisStore = require('connect-redis')(Session)
+//var socket = require('socket.io')(server);
 global.CONFIG = JSON.parse(fs.readFileSync('./config.json').toString());
 
 var app = express();
 var objMulter = multer({dest : 'public/images'})
 app.use(objMulter.any())
+// dao.sync({force:true})
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
@@ -27,6 +31,10 @@ app.use(Session({
   secret:'keybord',
   resave : false,
   saveUninitialized:true,
+  // store: new RedisStore({
+  //   client:'127.0.0.1',
+  //   port:'6379'
+  // }),
   cookie : {
     maxAge:1000*60*30
   }
@@ -57,7 +65,7 @@ var Pool = mysql.createPool({
   user : CONFIG.mysql_user,
   password : CONFIG.mysql_password,
   port : CONFIG.mysql_port,
-  database :'wx_signIn'
+  database :'wx_signin'
 })
 var Pool2 = mysql.createPool({
   host : CONFIG.mysql_host_,
@@ -107,6 +115,12 @@ global.SEND = function(res,code,data,msg){
   }catch(e){
     LOG(e)
   }
+}
+global.TIME = function(){
+  var day = new Date().getHours() +':'+ new Date().getMinutes() +':'+ new Date().getSeconds();
+  var year = new Date().getFullYear() +'-'+ (new Date().getMonth()+1) +'-'+ new Date().getDate()
+  var signIn_time = year +' '+ day;
+  return signIn_time
 }
 global.WX_ID = function(code,callback){
   var appid = "wx238ca91cc7a15764";
