@@ -1,5 +1,5 @@
 {
-    "imgUrl":"http://localhost:7090/images/",
+    "imgUrl":"http://127.0.0.1:7090/images/",
     "mysql_host":"114.55.104.101",
     "mysql_user":"root",
     "mysql_password":"437612langjie",
