@@ -63,11 +63,18 @@ this.prize_edit = function(prize_id,prize_name,price,prize_info,prize_class,imgU
 }
 this.prize_delete = function(prize_id,callback){
     let str = 'DELETE FROM annual_prize WHERE id = "'+prize_id+'"';
-    CON(str,function(err,result){
+    CON(str,function(err){
         if(err){
             LOG(err)
         }else{
-            callback(result)
+           let str = 'DELETE FROM annual_draw WHERE prize_id = "'+prize_id+'"'
+           CON(str,function(err,result){
+               if(err){
+                   LOG(err)
+               }else{
+                   callback(result)
+               }
+           })
         }
     })
 }
