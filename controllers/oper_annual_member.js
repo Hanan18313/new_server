@@ -3,8 +3,39 @@ var base= require('./base.js')
 var url = require('url')
 var Promise = require('promise');
 var fs = require('fs')
+var MD5 = require('md5');
 global.CONFIG = JSON.parse(fs.readFileSync('./config.json').toString());
 
+this.login = function(req,res){
+    var user_name = url.parse(req.url,true).query.user_name
+        password = url.parse(req.url,true).query.password;
+        ModOper_annual_member.login(user_name,function(result){
+            if(result.length != 0){
+                if(MD5(password)== result[0].pwd){
+                    req.session.user_name = user_name,
+                    req.session.pwd = result[0].pwd
+                    res.send({
+                        code:200,
+                        msg:'登陆成功',
+                        data:true
+                    })
+                }else{
+                    res.send({
+                        code:200,
+                        msg:'登陆失败',
+                        data:false
+                    })
+                }
+            }else{
+                res.send({
+                    code:200,
+                    msg:'登陆失败',
+                    data:false
+                })
+            }
+
+        })
+}
 this.member_list = function(req,res){
     var params = url.parse(req.url,true).query
     var pageNum = params.pageNum;

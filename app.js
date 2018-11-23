@@ -12,7 +12,7 @@ var Session = require('express-session')
 var log4js = require('./logs/start_log.js');
 var querystring = require('querystring');
 var ws = require('ws')
-//var RedisStore = require('connect-redis')(Session)
+var RedisStore = require('connect-redis')(Session)
 var socket = require('socket.io')(app);
 global.CONFIG = JSON.parse(fs.readFileSync('./config.json').toString());
 
@@ -28,23 +28,55 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(Session({
-  secret:'keybord',
-  resave : false,
-  saveUninitialized:true,
-  // store: new RedisStore({
-  //   client:'127.0.0.1',
-  //   port:'6379'
-  // }),
-  cookie : {
-    maxAge:1000*60*30
+var config = {
+  "cookie":{
+    "maxAge":1000*60*30
+  },
+  "sessionStore":{
+    "host":'127.0.0.1',
+    "port":'6379',
+    "db":1,
+    "ttl":1800,
+    "logErrors":true
   }
+}
+// app.use(Session({
+//   secret:'keybord',
+//   resave : false,
+//   saveUninitialized:true,
+//   store: new RedisStore({
+//     client:'127.0.0.1',
+//     port:'6379'
+//   }),
+//   cookie : {
+//     maxAge:1000*60*30
+//   }
+// }))
+app.use(Session({
+  name:'sid',
+  secret:'keyborad',
+  resave:true,
+  rolling:true,
+  saveUninitialized:false,
+  cookie:config.cookie,
+  store:new RedisStore(config.sessionStore)
 }))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended:false}))
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public/dist')));
+app.use(function(req,res,next){
+  var url = req.originalUrl
+  console.log(req.session)
+  console.log(req.originalUrl)
+  if(req.session.user_name && url != '/oper/login'){
+    res.redirect('/')
+    return
+  }else{
+    next()
+  }
 
+})
 require('./routes/index')(app)
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

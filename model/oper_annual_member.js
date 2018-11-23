@@ -1,4 +1,15 @@
 
+this.login = function(user_name,callback){
+    let str = 'SELECT * FROM employee WHERE user_id = "'+user_name+'" OR user_name = "'+user_name+'"';
+    CONN(str,function(err,result){
+        if(err){
+            LOG(err)
+        }else{
+            callback(result)
+        }
+    })
+}
+
 this.member_list = function(pageNum,pageSize,callback){
     var startPage = Number((pageNum-1)*pageSize)
     let str = 'SELECT * FROM annual_member RIGHT JOIN annual_signIn ON annual_member.open_id = annual_signIn.open_id limit '+startPage+','+pageSize;

@@ -13,6 +13,9 @@ module.exports = function(app){
         res.header("Access-Control-Allow-Methods", 'GET,POST,PUT,PATCH,DELETE,OPTIONS');
         next();
     })
+    app.get('/oper/login',function(req,res,next){
+        ConOper_annual_member.login(req,res,next)
+    })
     app.get('/oper/member_list',function(req,res,next){
         ConOper_annual_member.member_list(req,res,next)
     })
