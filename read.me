@@ -1,7 +1,9 @@
 年会
 公司员工及家属
 小程序签到：
-未关注->关注 登记信息（姓名，手机，朗杰员工姓名）
-奖品表：id，prize_name, price, round, prize_info。
-参与人：id, name, phone, unionid, portrait, signIn_time。
+奖品表：id, prize_name, price, prize_class(员工，家属), prize_info。
+基本表：id, name, phone(后四位), open_id, portrait, nick_name。
+会员表：id, name, phone(后四位), open_id, portrait, signIn_time, company, nick_name。
+签到表：id, signIn_id, open_id
+抽奖表：id, prize_id, signIn_id, open_id
 

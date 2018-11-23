@@ -50,7 +50,6 @@ this.prize_add = function(req,res){
     var imgUrl = req.body.data.imgUrl;
     var number = req.body.data.number;
     if(Number(number) == 1){
-        //new Promise((resolve,reject) => {
             ModPrize.prize_add(prize_name,price,prize_info,imgUrl,function(result){
                 var prize_id = result.insertId
                 ModPrize.draw_add(prize_id,function(result){
@@ -62,6 +61,7 @@ this.prize_add = function(req,res){
             for(let i = 0; i< Number(number); i++){
                 ModPrize.prize_add(prize_name,price,prize_info,imgUrl,function(result){
                     var prize_id = result.insertId
+                    var prize_class = result.prize_class
                     // resolve(result)
                     // console.log(result)
                     ModPrize.draw_add(prize_id,function(result){

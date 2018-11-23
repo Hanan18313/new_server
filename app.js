@@ -10,9 +10,10 @@ var request = require('request')
 var bodyParser = require('body-parser');
 var Session = require('express-session')
 var log4js = require('./logs/start_log.js');
-var dao = require('./dao/dao.js')
+var querystring = require('querystring');
+var ws = require('ws')
 //var RedisStore = require('connect-redis')(Session)
-//var socket = require('socket.io')(server);
+var socket = require('socket.io')(app);
 global.CONFIG = JSON.parse(fs.readFileSync('./config.json').toString());
 
 var app = express();

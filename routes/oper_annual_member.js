@@ -22,7 +22,25 @@ module.exports = function(app){
     app.post('/oper/member_update',function(req,res,next){
         ConOper_annual_member.member_update(req,res,next)
     })
-    app.post('/oper/new_draw',function(req,res,next){
-        ConOper_annual_member.new_draw(req,res,next)
+    // app.post('/oper/new_draw',function(req,res,next){
+    //     ConOper_annual_member.new_draw(req,res,next)
+    // }),
+    app.get('/oper/draw_employee_list',function(req,res,next){
+        ConOper_annual_member.draw_empolyee_list(req,res,next)
+    })
+    app.get('/oper/draw_employee_get',function(req,res,next){
+        ConOper_annual_member.draw_empolyee_get(req,res,next)
+    })
+    app.post('/oper/draw_employee_prize',function(req,res,next){
+        ConOper_annual_member.draw_empolyee_prize(req,res,next)
+    })
+    app.get('/oper/draw_family_list',function(req,res,next){
+        ConOper_annual_member.draw_family_list(req,res,next)
+    })
+    app.get('/oper/draw_prize',function(req,res,next){
+        ConOper_annual_member.draw_family_prize(req,res,next)
+    })
+    app.post('/oper/draw_update_f',function(req,res,next){
+        ConOper_annual_member.draw_update_f(req,res,next)
     })
 }

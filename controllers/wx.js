@@ -110,7 +110,6 @@ this.prize_pool = function(req,res){
 this.isLunch = function(req,res){
     var value = req.body.value;//false,true
     var unionid = req.body.unionid
-    console.log(value)
     ModWx.isLunch(unionid,value,function(result){
         res.send({
             code:200,

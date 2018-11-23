@@ -7,6 +7,7 @@
 var app = require('../app');
 var debug = require('debug')('server:server');
 var http = require('http');
+var websocket = require('../controllers/annual')
 //var CONFIG = JSON.parse(fs.readFileSync('../config.json').toString())
 //var localhost_port = CONFIG.localhost_port
 
@@ -22,6 +23,7 @@ app.set('port', port);
  */
 
 var server = http.createServer(app);
+
 
 /**
  * Listen on provided port, on all network interfaces.
@@ -90,3 +92,7 @@ function onListening() {
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
 }
+
+
+//ws
+websocket.websocket(server)
