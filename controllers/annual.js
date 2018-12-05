@@ -10,71 +10,107 @@ var querystring = require('querystring')
 var ws = require('ws')
 global.CONFIG = JSON.parse(fs.readFileSync('./config.json').toString())
 
-this.userInfo = function(req,res){
-    var code = url.parse(req.url,true).query.code;
-    WX_ID(code,function(result){
-        var wx_id = JSON.parse(result);
-        res.send(result)
-        var unionid = wx_id.unionid;
-        var openid= wx_id.openid;
-    })
-}
 this.getUserInfo = function(req,res){
     var query = req.body;
-    var day = new Date().getHours() +':'+ new Date().getMinutes() +':'+ new Date().getSeconds();
-    var year = new Date().getFullYear() +'-'+ (new Date().getMonth()+1) +'-'+ new Date().getDate()
-    var signIn_time = year +' '+ day;
-    var obj = {
-        openid:query.openid,
-        unionid:query.unionid,
-        portrait:query.avatarUrl,
-        nickName:query.nickName,
-        signIn_time:signIn_time,
-        category:2
-    }
-    if(query.unionid == undefined){//家属
-        Mod_annual.add_annual_member_f(obj,function(result){
-            res.send({
-                code:200,
-                msg:'新增成功',
-                value:2
-            })
-        })
-    }else{
-        Mod_annual.getUserInfo(obj,function(result){
-            if(result.length != 0){
-                let obj = {
-                    name:result[0].name,
-                    phone:result[0].phone,
-                    openid:query.openid,
-                    portrait:query.avatarUrl,
-                    signIn_time:signIn_time,
-                    company:result[0].company,
-                    nickName:query.nickName,
-                    category:1
-                }
-                Mod_annual.add_annual_member(obj,function(result){
-                    res.send({
-                        code:200,
-                        msg:'新增成功',
-                        value:1
-                    })
-                })
-            }else{
+    var openid = query.openid
+    Mod_annual.check_join(openid,function(result){
+        if(result.length != 0){
+            var day = new Date().getHours() +':'+ new Date().getMinutes() +':'+ new Date().getSeconds();
+            var year = new Date().getFullYear() +'-'+ (new Date().getMonth()+1) +'-'+ new Date().getDate()
+            var signIn_time = year +' '+ day;
+            var obj = {
+                openid:query.openid,
+                unionid:query.unionid,
+                portrait:query.avatarUrl,
+                nickName:query.nickName,
+                signIn_time:signIn_time,
+                category:2
+            }
+            if(query.unionid == undefined){//家属
                 Mod_annual.add_annual_member_f(obj,function(result){
                     res.send({
                         code:200,
                         msg:'新增成功',
-                        value:0
+                        value:2
                     })
                 })
+            }else{
+                Mod_annual.getUserInfo(obj,function(result){
+                    if(result.length != 0){
+                        let obj = {
+                            name:result[0].name,
+                            phone:result[0].phone,
+                            openid:query.openid,
+                            portrait:query.avatarUrl,
+                            signIn_time:signIn_time,
+                            company:result[0].company,
+                            nickName:query.nickName,
+                            category:1
+                        }
+                        Mod_annual.add_annual_member(obj,function(result){//员工
+                            res.send({
+                                code:200,
+                                msg:'新增成功',
+                                value:1
+                            })
+                        })
+                    }else{
+                        Mod_annual.add_annual_member_f(obj,function(result){//家属
+                            res.send({
+                                code:200,
+                                msg:'新增成功',
+                                value:0
+                            })
+                        })
+                    }
+                })
             }
+        }else{
+            res.send({
+                code:200,
+                msg:'无记录',
+                value:false
+            })
+        }
+    })
+}
+this.add_employee = function(req,res){
+    var openid = req.body.openid
+    var name = req.body.name
+    var phone = req.body.phone
+        Mod_annual.add_employee(openid,name,phone,function(result){
+            res.send({
+                code:200,
+                msg:'新增成功',
+                value:0
+            })
         })
-    }
+}
+this.add_family = function(req,res){
+    var openid = req.body.openid
+    var phone = req.body.data.phone
+    var name = req.body.data.name
+        Mod_annual.add_family(openid,phone,name,function(result){
+            res.send({
+                code:200,
+                msg:'新增成功',
+                value:1
+            })
+        })
 }
 this.check_signIn = function(req,res){
+    var date = new Date("2018/12/4 16:34:00") - new Date()
     var openid = url.parse(req.url,true).query.openid
     Mod_annual.check_signIn(openid,function(result){
+        res.send({
+            result:result,
+            date:date
+        })
+    })
+}
+this.check_employee = function(req,res){
+    var unionid = url.parse(req.url,true).query.unionid
+    Mod_annual.check_employee(unionid,function(result){
         res.send(result)
     })
 }
@@ -180,6 +216,7 @@ this.websocket = function(server){
         ws.on('message',(data) =>{
             var value = JSON.parse(data)
             Mod_annual.chat_record_pull(value,function(result){
+                
             })
             ws.send(data)
         })
@@ -189,14 +226,20 @@ this.websocket = function(server){
     })
 }
 this.chat_record = function(req,res){
-    Mod_annual.chat_record_push(function(result){
-        var record = {
-            avatarUrl:result[0].portrait,
-            content:result[0].chat_record,
-            nickName:result[0].nick_name,
-            date:result[0].chat_time
-          }
-        res.send(record)
+    var query = url.parse(req.url,true).query
+    var page = query.page?Number(query.page):1
+    var pageSize = query.pageSize?Number(query.pageSize):5
+    Mod_annual.chat_record_push(page,pageSize,function(result){
+        var arr = [];
+        new Promise((resolve,reject) =>{
+            resolve()
+        }).then(() =>{
+            for(let i = 0; i < result.length; i++){
+                arr.push(result[i])
+            }
+        }).then(() =>{
+            res.send(JSON.stringify(arr))
+        })
     })
 }
 //聊天室发送图片

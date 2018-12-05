@@ -5,7 +5,7 @@ var Sequelize = require('sequelize');
 exports.sequelize = function () {
 	var config = JSON.parse(fs.readFileSync('./config.json').toString());
 	return new Sequelize(
-		'wx_node', 
+		'classmate', 
 		config.mysql_user, 
 		config.mysql_password, 
 		{

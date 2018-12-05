@@ -1,8 +1,13 @@
 var ConWx = require('../controllers/wx.js');
+var Con_annual = require('../controllers/annual.js')
+var Base = require('../controllers/base')
 
 module.exports = function(app){
+    // app.get('/wx/userInfo',function(req,res,next){
+    //     ConWx.user_info(req,res,next)
+    // })
     app.get('/wx/userInfo',function(req,res,next){
-        ConWx.user_info(req,res,next)
+        Base.userInfo(req,res,next)
     })
     app.get('/wx/signIn',function(req,res,next){
         ConWx.signIn(req,res,next)

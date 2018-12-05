@@ -12,8 +12,6 @@ this.login = function(req,res){
         ModOper_annual_member.login(user_name,function(result){
             if(result.length != 0){
                 if(MD5(password)== result[0].pwd){
-                    req.session.user_name = user_name,
-                    req.session.pwd = result[0].pwd
                     res.send({
                         code:200,
                         msg:'登陆成功',

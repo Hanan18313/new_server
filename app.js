@@ -40,43 +40,30 @@ var config = {
     "logErrors":true
   }
 }
+
 // app.use(Session({
-//   secret:'keybord',
-//   resave : false,
-//   saveUninitialized:true,
-//   store: new RedisStore({
-//     client:'127.0.0.1',
-//     port:'6379'
-//   }),
-//   cookie : {
-//     maxAge:1000*60*30
-//   }
+//   name:'sid',
+//   secret:'keyborad',
+//   resave:true,
+//   rolling:true,
+//   saveUninitialized:false,
+//   cookie:config.cookie,
+//   store:new RedisStore(config.sessionStore)
 // }))
-app.use(Session({
-  name:'sid',
-  secret:'keyborad',
-  resave:true,
-  rolling:true,
-  saveUninitialized:false,
-  cookie:config.cookie,
-  store:new RedisStore(config.sessionStore)
-}))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended:false}))
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public/dist')));
-app.use(function(req,res,next){
-  var url = req.originalUrl
-  console.log(req.session)
-  console.log(req.originalUrl)
-  if(req.session.user_name && url != '/oper/login'){
-    res.redirect('/')
-    return
-  }else{
-    next()
-  }
+// app.use(function(req,res,next){
+//   var url = req.originalUrl
+//   if(req.session.user_name && url != '/oper/login'){
+//     res.redirect('/')
+//     return
+//   }else{
+//     next()
+//   }
 
-})
+// })
 require('./routes/index')(app)
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -156,8 +143,34 @@ global.TIME = function(){
   return signIn_time
 }
 global.WX_ID = function(code,callback){
-  var appid = "wx238ca91cc7a15764";
-  var secret = "655d3bf13a70671966abdd4d2c6be206";
+  var appid = CONFIG.appid;
+  var secret = CONFIG.secret;
+  var infoUrl = 'https://api.weixin.qq.com/sns/jscode2session?appid='+appid+'&secret='+secret+'&js_code='+code+'&grant_type=authorization_code';
+  request.get(infoUrl,function(err,response,result){
+    if(err){
+      //throw Error(err)
+      LOG(err)
+    }else{
+      callback(result)
+    }
+  })
+}
+global.WX_ID_Annual = function(code,callback){
+  var appid = CONFIG.appid_annual;
+  var secret = CONFIG.secret_annual;
+  var infoUrl = 'https://api.weixin.qq.com/sns/jscode2session?appid='+appid+'&secret='+secret+'&js_code='+code+'&grant_type=authorization_code';
+  request.get(infoUrl,function(err,response,result){
+    if(err){
+      //throw Error(err)
+      LOG(err)
+    }else{
+      callback(result)
+    }
+  })
+}
+global.WX_ID_Alumni = function(code,callback){
+  var appid = CONFIG.appid_alumni;
+  var secret = CONFIG.secret_alumni;
   var infoUrl = 'https://api.weixin.qq.com/sns/jscode2session?appid='+appid+'&secret='+secret+'&js_code='+code+'&grant_type=authorization_code';
   request.get(infoUrl,function(err,response,result){
     if(err){

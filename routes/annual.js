@@ -1,8 +1,9 @@
 var Con_annual = require('../controllers/annual.js');
+var Base = require('../controllers/base')
 
 module.exports = function(app){
     app.get('/annual/userInfo',function(req,res,next){
-        Con_annual.userInfo(req,res,next)
+        Base.userInfo(req,res,next)
     })
     app.post('/annual/getUserInfo',function(req,res,next){
         Con_annual.getUserInfo(req,res,next)
@@ -12,6 +13,15 @@ module.exports = function(app){
     })
     app.get('/annual/get_annual_member',function(req,res,next){
         Con_annual.get_annual_member(req,res,next)
+    })
+    app.post('/annual/add_family',function(req,res,next){
+        Con_annual.add_family(req,res,next)
+    })
+    app.post('/annual/add_employee',function(req,res,next){
+        Con_annual.add_employee(req,res,next)
+    })
+    app.get('/annual/check_employee',function(req,res,next){
+        Con_annual.check_employee(req,res,next)
     })
     app.get('/annual/center_personal',function(req,res,next){
         Con_annual.center_personal(req,res,next)

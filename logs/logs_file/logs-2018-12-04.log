@@ -1,0 +1,56 @@
+[2018-12-04T14:48:42.411] [INFO] log_file - { Error: ER_BAD_FIELD_ERROR: Unknown column 'signIn_id' in 'field list'
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:113:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlMessage: 'Unknown column \'signIn_id\' in \'field list\'',
+  sqlState: '42S22',
+  index: 0,
+  sql: 'INSERT INTO annual_member(open_id,signIn_id,name) VALUE("odRhd5YbHVyD0CePO5o0X-wAMPrI","测试","7149")' }
+[2018-12-04T15:40:35.333] [INFO] log_file - { Error: ER_TRUNCATED_WRONG_VALUE: Incorrect datetime value: 'https://wx.qlogo.cn/mmopen/vi_32/jGwpRKu5IFgT8MJIdQ6utERbmIVgHKlbG6AITHjPHZSYlMatZvoHNUXv3libEoS376W4bnRfOPYFgVANrwFbvAg/132' for column 'signIn_time' at row 2
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:113:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_TRUNCATED_WRONG_VALUE',
+  errno: 1292,
+  sqlMessage: 'Incorrect datetime value: \'https://wx.qlogo.cn/mmopen/vi_32/jGwpRKu5IFgT8MJIdQ6utERbmIVgHKlbG6AITHjPHZSYlMatZvoHNUXv3libEoS376W4bnRfOPYFgVANrwFbvAg/132\' for column \'signIn_time\' at row 2',
+  sqlState: '22007',
+  index: 0,
+  sql: 'UPDATE annual_member SET portrait = "https://wx.qlogo.cn/mmopen/vi_32/jGwpRKu5IFgT8MJIdQ6utERbmIVgHKlbG6AITHjPHZSYlMatZvoHNUXv3libEoS376W4bnRfOPYFgVANrwFbvAg/132",signIn_time = "https://wx.qlogo.cn/mmopen/vi_32/jGwpRKu5IFgT8MJIdQ6utERbmIVgHKlbG6AITHjPHZSYlMatZvoHNUXv3libEoS376W4bnRfOPYFgVANrwFbvAg/132",nick_name = "Hanan",category = "1" WHERE open_id = "odRhd5YbHVyD0CePO5o0X-wAMPrI"' }
