@@ -7,8 +7,8 @@ var MD5 = require('md5');
 global.CONFIG = JSON.parse(fs.readFileSync('./config.json').toString());
 
 this.login = function(req,res){
-    var user_name = url.parse(req.url,true).query.user_name
-        password = url.parse(req.url,true).query.password;
+    var user_name = req.body.user_name
+        password = req.body.password;
         ModOper_annual_member.login(user_name,function(result){
             if(result.length != 0){
                 if(MD5(password)== result[0].pwd){
@@ -146,4 +146,67 @@ this.draw_update_f = function(req,res){
                 msg:'更新成功',
             })
         })
+}
+this.audit_list = function(req,res){
+    ModOper_annual_member.audit_list(function(result1){
+        ModOper_annual_member.audit_list_total(function(result){
+            // for(let i = 0; i < result1.length; i++){
+            //     if(result1[i].status == 1){
+            //         result1[i].status = '通过'
+            //     }else if(result1[i].status == 0){
+            //         result1[i].status = '不通过'
+            //     }else{
+            //         result1[i].status = '待审核'
+            //     }
+            // }
+            res.send({
+                result1:result1,
+                result:result[0]['COUNT(*)']
+            })
+        })
+    })
+}
+this.audit_update = function(req,res){
+    var openid = req.body.openid
+    var status = req.body.status
+    var day = new Date().getHours() +':'+ new Date().getMinutes() +':'+ new Date().getSeconds();
+    var year = new Date().getFullYear() +'-'+ (new Date().getMonth()+1) +'-'+ new Date().getDate()
+    var time = year +' '+ day;
+    ModOper_annual_member.audit_update(openid,status,time,function(result){
+        res.send({
+            code:200,
+            msg:'更新成功',
+        })
+    })
+}
+this.authority_list = function(req,res){
+    ModOper_annual_member.authority_list(function(result){
+        new Promise((resolve,reject) =>{
+            resolve()
+        }).then(() =>{
+            for(let i = 0; i < result.length; i++){
+                if(result[i].status == 1){
+                    result[i].status = true
+                }else if(result[i].status == 0){
+                    result[i].status = false
+                }
+            }
+        }).then(() =>{
+            res.send(result)
+        })
+    })
+}
+this.authority = function(req,res){
+    var obj = req.body.value
+    if(obj.status == false){
+        obj.status = 0
+    }else if(obj.status == true){
+        obj.status = 1
+    }
+    ModOper_annual_member.authority(obj,function(result){
+        res.send({
+            code:200,
+            msg:'更新成功'
+        })
+    })
 }

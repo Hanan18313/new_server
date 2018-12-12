@@ -185,3 +185,53 @@ this.draw_update_f = function(prize_id,signIn_id,callback){
         }
     })   
 }
+this.audit_list = function(callback){
+    let str = 'SELECT * FROM annual_basic WHERE status != "4"';
+    CON(str,function(err,result){
+        if(err){
+            LOG(err)
+        }else{
+            callback(result)
+        }
+    })  
+}
+this.audit_list_total = function(callback){
+    let str = 'SELECT COUNT(*) FROM annual_basic';
+    CON(str,function(err,result){
+        if(err){
+            LOG(err)
+        }else{
+            callback(result)
+        }
+    }) 
+}
+this.audit_update = function(openid,status,time,callback){
+    let str = 'UPDATE annual_basic SET status = "'+status+'", time = "'+time+'" WHERE open_id = "'+openid+'"';
+    CON(str,function(err,result){
+        if(err){
+            LOG(err)
+        }else{
+            callback(result)
+        }
+    }) 
+}
+this.authority_list = function(callback){
+    let str = 'SELECT * FROM authority';
+    CON(str,function(err,result){
+        if(err){
+            LOG(err)
+        }else{
+            callback(result)
+        }
+    }) 
+}
+this.authority = function(obj,callback){
+    let str = 'UPDATE authority SET status = "'+obj.status+'" WHERE open_id = "'+obj.open_id+'"';
+    CON(str,function(err,result){
+        if(err){
+            LOG(err)
+        }else{
+            callback(result)
+        }
+    }) 
+}

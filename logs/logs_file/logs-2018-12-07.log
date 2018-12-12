@@ -1,0 +1,112 @@
+[2018-12-07T10:51:23.886] [INFO] log_file - { Error: ER_BAD_FIELD_ERROR: Unknown column 'ROWNUM' in 'where clause'
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlMessage: 'Unknown column \'ROWNUM\' in \'where clause\'',
+  sqlState: '42S22',
+  index: 0,
+  sql: 'SELECT * FROM annual_basic WHERE ROWNUM <= 10 ORDER BY time desc' }
+[2018-12-07T14:29:25.308] [INFO] log_file - { Error: connect ETIMEDOUT 192.168.2.149:8090
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  syscall: 'connect',
+  address: '192.168.2.149',
+  port: 8090 }
+[2018-12-07T14:31:17.020] [INFO] log_file - { Error: connect ETIMEDOUT 192.168.2.149:8090
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  syscall: 'connect',
+  address: '192.168.2.149',
+  port: 8090 }
+[2018-12-07T14:34:17.678] [INFO] log_file - { Error: connect ETIMEDOUT 192.168.2.149:8090
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  syscall: 'connect',
+  address: '192.168.2.149',
+  port: 8090 }
+[2018-12-07T14:35:44.454] [INFO] log_file - { Error: connect ETIMEDOUT 192.168.2.149:8090
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  syscall: 'connect',
+  address: '192.168.2.149',
+  port: 8090 }
+[2018-12-07T16:38:01.674] [INFO] log_file - { Error: socket hang up
+    at createHangUpError (_http_client.js:331:15)
+    at Socket.socketOnEnd (_http_client.js:423:23)
+    at emitNone (events.js:111:20)
+    at Socket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:139:11)
+    at process._tickCallback (internal/process/next_tick.js:181:9) code: 'ECONNRESET' }
+[2018-12-07T16:39:07.694] [INFO] log_file - { Error: socket hang up
+    at createHangUpError (_http_client.js:331:15)
+    at Socket.socketOnEnd (_http_client.js:423:23)
+    at emitNone (events.js:111:20)
+    at Socket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:139:11)
+    at process._tickCallback (internal/process/next_tick.js:181:9) code: 'ECONNRESET' }
+[2018-12-07T16:39:16.833] [INFO] log_file - { Error: socket hang up
+    at createHangUpError (_http_client.js:331:15)
+    at Socket.socketOnEnd (_http_client.js:423:23)
+    at emitNone (events.js:111:20)
+    at Socket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:139:11)
+    at process._tickCallback (internal/process/next_tick.js:181:9) code: 'ECONNRESET' }
+[2018-12-07T16:41:01.913] [INFO] log_file - { Error: socket hang up
+    at createHangUpError (_http_client.js:331:15)
+    at Socket.socketOnEnd (_http_client.js:423:23)
+    at emitNone (events.js:111:20)
+    at Socket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:139:11)
+    at process._tickCallback (internal/process/next_tick.js:181:9) code: 'ECONNRESET' }
+[2018-12-07T16:43:21.359] [INFO] log_file - { Error: socket hang up
+    at createHangUpError (_http_client.js:331:15)
+    at Socket.socketOnEnd (_http_client.js:423:23)
+    at emitNone (events.js:111:20)
+    at Socket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:139:11)
+    at process._tickCallback (internal/process/next_tick.js:181:9) code: 'ECONNRESET' }
+[2018-12-07T16:44:04.823] [INFO] log_file - { Error: socket hang up
+    at createHangUpError (_http_client.js:331:15)
+    at Socket.socketOnEnd (_http_client.js:423:23)
+    at emitNone (events.js:111:20)
+    at Socket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:139:11)
+    at process._tickCallback (internal/process/next_tick.js:181:9) code: 'ECONNRESET' }
+[2018-12-07T16:45:14.062] [INFO] log_file - { Error: socket hang up
+    at createHangUpError (_http_client.js:331:15)
+    at Socket.socketOnEnd (_http_client.js:423:23)
+    at emitNone (events.js:111:20)
+    at Socket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:139:11)
+    at process._tickCallback (internal/process/next_tick.js:181:9) code: 'ECONNRESET' }

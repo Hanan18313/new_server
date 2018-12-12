@@ -99,7 +99,7 @@ this.add_family = function(req,res){
         })
 }
 this.check_signIn = function(req,res){
-    var date = new Date("2018/12/4 16:34:00") - new Date()
+    var date = new Date("2018/12/6 16:34:00") - new Date()
     var openid = url.parse(req.url,true).query.openid
     Mod_annual.check_signIn(openid,function(result){
         res.send({

@@ -9,4 +9,5 @@ module.exports = function(app){
   require('./annual')(app)
   require('./oper_annual_member')(app)
   require('./alumni')(app)
+  require('./wx_annual')(app)
 }

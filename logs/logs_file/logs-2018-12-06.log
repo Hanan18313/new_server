@@ -1,0 +1,280 @@
+[2018-12-06T21:10:28.619] [INFO] log_file - { Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= "0" WHERE open_id = "undefined"' at line 1
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Handshake.onConnect (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:64:7)
+    at Handshake.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Handshake._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Handshake.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Handshake.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'= "0" WHERE open_id = "undefined"\' at line 1',
+  sqlState: '42000',
+  index: 0,
+  sql: 'UPDATE annual_basic status = "0" WHERE open_id = "undefined"' }
+[2018-12-06T21:10:52.539] [INFO] log_file - { Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= "1" WHERE open_id = "undefined"' at line 1
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'= "1" WHERE open_id = "undefined"\' at line 1',
+  sqlState: '42000',
+  index: 0,
+  sql: 'UPDATE annual_basic status = "1" WHERE open_id = "undefined"' }
+[2018-12-06T21:11:33.496] [INFO] log_file - { Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= "1" WHERE open_id = "odRhd5YbHVyD0CePO5o0X-wAMPrI"' at line 1
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'= "1" WHERE open_id = "odRhd5YbHVyD0CePO5o0X-wAMPrI"\' at line 1',
+  sqlState: '42000',
+  index: 0,
+  sql: 'UPDATE annual_basic status = "1" WHERE open_id = "odRhd5YbHVyD0CePO5o0X-wAMPrI"' }
+[2018-12-06T21:11:42.990] [INFO] log_file - { Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= "1" WHERE open_id = "odRhd5YbHVyD0CePO5o0X-wAMPrI"' at line 1
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'= "1" WHERE open_id = "odRhd5YbHVyD0CePO5o0X-wAMPrI"\' at line 1',
+  sqlState: '42000',
+  index: 0,
+  sql: 'UPDATE annual_basic status = "1" WHERE open_id = "odRhd5YbHVyD0CePO5o0X-wAMPrI"' }
+[2018-12-06T21:44:13.883] [INFO] log_file - { Error: ER_TRUNCATED_WRONG_VALUE_FOR_FIELD: Incorrect integer value: 'null' for column 'status' at row 1
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+  errno: 1366,
+  sqlMessage: 'Incorrect integer value: \'null\' for column \'status\' at row 1',
+  sqlState: 'HY000',
+  index: 0,
+  sql: 'UPDATE annual_basic SET status = "null" WHERE open_id = "odRhd5YbHVyD0CePO5o0X-wAMPrI"' }
+[2018-12-06T21:44:15.464] [INFO] log_file - { Error: ER_TRUNCATED_WRONG_VALUE_FOR_FIELD: Incorrect integer value: 'null' for column 'status' at row 1
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+  errno: 1366,
+  sqlMessage: 'Incorrect integer value: \'null\' for column \'status\' at row 1',
+  sqlState: 'HY000',
+  index: 0,
+  sql: 'UPDATE annual_basic SET status = "null" WHERE open_id = "odRhd5YbHVyD0CePO5o0X-wAMPrI"' }
+[2018-12-06T21:44:47.545] [INFO] log_file - { Error: ER_TRUNCATED_WRONG_VALUE_FOR_FIELD: Incorrect integer value: 'null' for column 'status' at row 1
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Handshake.onConnect (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:64:7)
+    at Handshake.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Handshake._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Handshake.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Handshake.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+  errno: 1366,
+  sqlMessage: 'Incorrect integer value: \'null\' for column \'status\' at row 1',
+  sqlState: 'HY000',
+  index: 0,
+  sql: 'UPDATE annual_basic SET status = "null" WHERE open_id = "odRhd5YbHVyD0CePO5o0X-wAMPrI"' }
+[2018-12-06T21:45:00.183] [INFO] log_file - { Error: ER_TRUNCATED_WRONG_VALUE_FOR_FIELD: Incorrect integer value: '' for column 'status' at row 1
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Handshake.onConnect (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:64:7)
+    at Handshake.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Handshake._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Handshake.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Handshake.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+  errno: 1366,
+  sqlMessage: 'Incorrect integer value: \'\' for column \'status\' at row 1',
+  sqlState: 'HY000',
+  index: 0,
+  sql: 'UPDATE annual_basic SET status = "" WHERE open_id = "odRhd5YbHVyD0CePO5o0X-wAMPrI"' }
+[2018-12-06T21:45:19.213] [INFO] log_file - { Error: ER_TRUNCATED_WRONG_VALUE_FOR_FIELD: Incorrect integer value: 'null' for column 'status' at row 1
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Handshake.onConnect (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:64:7)
+    at Handshake.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Handshake._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Handshake.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Handshake.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+  errno: 1366,
+  sqlMessage: 'Incorrect integer value: \'null\' for column \'status\' at row 1',
+  sqlState: 'HY000',
+  index: 0,
+  sql: 'UPDATE annual_basic SET status = "null" WHERE open_id = "odRhd5YbHVyD0CePO5o0X-wAMPrI"' }
+[2018-12-06T21:46:27.012] [INFO] log_file - { Error: ER_TRUNCATED_WRONG_VALUE_FOR_FIELD: Incorrect integer value: 'null' for column 'status' at row 1
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+  errno: 1366,
+  sqlMessage: 'Incorrect integer value: \'null\' for column \'status\' at row 1',
+  sqlState: 'HY000',
+  index: 0,
+  sql: 'UPDATE annual_basic SET status = "null" WHERE open_id = "odRhd5YbHVyD0CePO5o0X-wAMPrI"' }

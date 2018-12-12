@@ -13,7 +13,7 @@ module.exports = function(app){
         res.header("Access-Control-Allow-Methods", 'GET,POST,PUT,PATCH,DELETE,OPTIONS');
         next();
     })
-    app.get('/oper/login',function(req,res,next){
+    app.post('/oper/login',function(req,res,next){
         ConOper_annual_member.login(req,res,next)
     })
     app.get('/oper/member_list',function(req,res,next){
@@ -46,4 +46,17 @@ module.exports = function(app){
     app.post('/oper/draw_update_f',function(req,res,next){
         ConOper_annual_member.draw_update_f(req,res,next)
     })
+    app.get('/oper/audit_list',function(req,res,next){
+        ConOper_annual_member.audit_list(req,res,next)
+    })
+    app.put('/oper/audit_update',function(req,res,next){
+        ConOper_annual_member.audit_update(req,res,next)
+    })
+    app.get('/oper/authority_list',function(req,res,next){
+        ConOper_annual_member.authority_list(req,res,next)
+    })
+    app.put('/oper/authority',function(req,res,next){
+        ConOper_annual_member.authority(req,res,next)
+    })
+
 }

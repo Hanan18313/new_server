@@ -1,0 +1,293 @@
+[2018-12-10T15:37:13.859] [INFO] log_file - { Error: ER_BAD_FIELD_ERROR: Unknown column 'time' in 'order clause'
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Handshake.onConnect (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:64:7)
+    at Handshake.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Handshake._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Handshake.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Handshake.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlMessage: 'Unknown column \'time\' in \'order clause\'',
+  sqlState: '42S22',
+  index: 0,
+  sql: 'SELECT * FROM annual_record ORDER BY time desc limit 10' }
+[2018-12-10T15:37:33.862] [INFO] log_file - { Error: ER_BAD_FIELD_ERROR: Unknown column 'time' in 'order clause'
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Handshake.onConnect (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:64:7)
+    at Handshake.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Handshake._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Handshake.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Handshake.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlMessage: 'Unknown column \'time\' in \'order clause\'',
+  sqlState: '42S22',
+  index: 0,
+  sql: 'SELECT * FROM annual_record ORDER BY time desc limit 10' }
+[2018-12-10T15:37:53.845] [INFO] log_file - { Error: ER_BAD_FIELD_ERROR: Unknown column 'time' in 'order clause'
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlMessage: 'Unknown column \'time\' in \'order clause\'',
+  sqlState: '42S22',
+  index: 0,
+  sql: 'SELECT * FROM annual_record ORDER BY time desc limit 10' }
+[2018-12-10T15:38:05.572] [INFO] log_file - { Error: ER_BAD_FIELD_ERROR: Unknown column 'time' in 'order clause'
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlMessage: 'Unknown column \'time\' in \'order clause\'',
+  sqlState: '42S22',
+  index: 0,
+  sql: 'SELECT * FROM annual_record ORDER BY time desc limit 10' }
+[2018-12-10T15:38:05.578] [INFO] log_file - { Error: ER_BAD_FIELD_ERROR: Unknown column 'time' in 'order clause'
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlMessage: 'Unknown column \'time\' in \'order clause\'',
+  sqlState: '42S22',
+  index: 0,
+  sql: 'SELECT * FROM annual_record ORDER BY time desc limit 10' }
+[2018-12-10T15:38:25.539] [INFO] log_file - { Error: ER_BAD_FIELD_ERROR: Unknown column 'time' in 'order clause'
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlMessage: 'Unknown column \'time\' in \'order clause\'',
+  sqlState: '42S22',
+  index: 0,
+  sql: 'SELECT * FROM annual_record ORDER BY time desc limit 10' }
+[2018-12-10T15:38:45.526] [INFO] log_file - { Error: ER_BAD_FIELD_ERROR: Unknown column 'time' in 'order clause'
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlMessage: 'Unknown column \'time\' in \'order clause\'',
+  sqlState: '42S22',
+  index: 0,
+  sql: 'SELECT * FROM annual_record ORDER BY time desc limit 10' }
+[2018-12-10T15:39:05.528] [INFO] log_file - { Error: ER_BAD_FIELD_ERROR: Unknown column 'time' in 'order clause'
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlMessage: 'Unknown column \'time\' in \'order clause\'',
+  sqlState: '42S22',
+  index: 0,
+  sql: 'SELECT * FROM annual_record ORDER BY time desc limit 10' }
+[2018-12-10T15:39:25.538] [INFO] log_file - { Error: ER_BAD_FIELD_ERROR: Unknown column 'time' in 'order clause'
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlMessage: 'Unknown column \'time\' in \'order clause\'',
+  sqlState: '42S22',
+  index: 0,
+  sql: 'SELECT * FROM annual_record ORDER BY time desc limit 10' }
+[2018-12-10T17:13:03.389] [INFO] log_file - { Error: connect ETIMEDOUT 192.168.50.230:8090
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  syscall: 'connect',
+  address: '192.168.50.230',
+  port: 8090 }
+[2018-12-10T19:27:11.150] [INFO] log_file - { Error: socket hang up
+    at TLSSocket.onHangUp (_tls_wrap.js:1148:19)
+    at Object.onceWrapper (events.js:313:30)
+    at emitNone (events.js:111:20)
+    at TLSSocket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:139:11)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+  code: 'ECONNRESET',
+  path: null,
+  host: 'os.langjie.com',
+  port: '8090',
+  localAddress: undefined }
+[2018-12-10T19:30:12.394] [INFO] log_file - { Error: connect ETIMEDOUT 192.168.50.230:8090
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  syscall: 'connect',
+  address: '192.168.50.230',
+  port: 8090 }
+[2018-12-10T19:31:15.529] [INFO] log_file - { Error: connect ETIMEDOUT 192.168.50.230:8090
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  syscall: 'connect',
+  address: '192.168.50.230',
+  port: 8090 }
+[2018-12-10T19:31:40.675] [INFO] log_file - { Error: connect ETIMEDOUT 192.168.50.230:8090
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  syscall: 'connect',
+  address: '192.168.50.230',
+  port: 8090 }

@@ -1,4 +1,6 @@
 {
+    
+    "proxy_url":"https://os.langjie.com",
     "imgUrl":"https://mp.langjie.com/images/",
     "mysql_host":"114.55.104.101",
     "mysql_user":"root",
