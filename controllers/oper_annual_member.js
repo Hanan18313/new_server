@@ -148,7 +148,10 @@ this.draw_update_f = function(req,res){
         })
 }
 this.audit_list = function(req,res){
-    ModOper_annual_member.audit_list(function(result1){
+    var params = url.parse(req.url,true).query
+    var page = params.page?Number(params.page):1
+    var pageSize = params.pageSize?Number(params.pageSize):10
+    ModOper_annual_member.audit_list(page,pageSize,function(result1){
         ModOper_annual_member.audit_list_total(function(result){
             // for(let i = 0; i < result1.length; i++){
             //     if(result1[i].status == 1){

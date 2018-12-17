@@ -185,8 +185,9 @@ this.draw_update_f = function(prize_id,signIn_id,callback){
         }
     })   
 }
-this.audit_list = function(callback){
-    let str = 'SELECT * FROM annual_basic WHERE status != "4"';
+this.audit_list = function(page,pageSize,callback){
+    var startPage = Number((page-1)*pageSize)
+    let str = 'SELECT * FROM annual_basic WHERE status != "4" limit '+startPage+','+pageSize;
     CON(str,function(err,result){
         if(err){
             LOG(err)
