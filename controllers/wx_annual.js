@@ -24,6 +24,7 @@ this.setUserInfo = function(req,res){
                     name:result[0].name,
                     phone:result[0].phone,
                     openid:openid,
+                    unionid:unionid,
                     avatarUrl:avatarUrl
                 }
                 Mod_annual.setUserInfo(obj,function(result){
@@ -164,16 +165,24 @@ var rule = new schedule.RecurrenceRule()
 // }
 this.v_code = function(req,res){
     var mobile = url.parse(req.url,true).query.mobile
-    var code = Math.ceil(Math.random()*1000000)
-    var proxy_url = CONFIG.proxy_url+'/sms/v_code?code='+code+'&mobile='+mobile
-    request.get(proxy_url,function(err,respones,result){
-        if(err){
-            LOG(err)
-        }else{
-            res.send({
-                v_code:code
-            })
+    var code =''
+    new Promise((resolve,reject) => {
+        resolve();
+    }).then(() =>{
+        for(let i = 0; i < 6; i++){
+            code+=Math.floor(Math.random()*10);
         }
+    }).then(() =>{
+        var proxy_url = CONFIG.proxy_url+'/sms/v_code?code='+code+'&mobile='+mobile
+        request.get(proxy_url,function(err,respones,result){
+            if(err){
+                LOG(err)
+            }else{
+                res.send({
+                    v_code:code
+                })
+            }
+        })
     })
 }
 

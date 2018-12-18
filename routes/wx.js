@@ -1,5 +1,4 @@
 var ConWx = require('../controllers/wx.js');
-var Con_annual = require('../controllers/annual.js')
 var Base = require('../controllers/base')
 
 module.exports = function(app){

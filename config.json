@@ -1,5 +1,4 @@
 {
-    
     "proxy_url":"https://os.langjie.com",
     "imgUrl":"https://mp.langjie.com/images/",
     "mysql_host":"114.55.104.101",
@@ -14,6 +13,6 @@
     "secret_annual":"5bc6a8b4bed3a4b3e628e9564b48d7a4",
     "appid":"wx238ca91cc7a15764",
     "secret":"655d3bf13a70671966abdd4d2c6be206",
-    "appid_alumni":"wx8ec0c1176c62003e",
-    "secret_alumni":"017a87172a74943cfeafd770a81a9f96"
+    "appid_annual_signIn":"wx6205b94ceda549a6",
+    "secret_annual_signIn":"ada2e7017b0bb02c71b3a14138985dfb"
 }

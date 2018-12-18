@@ -2,6 +2,12 @@ var Con_annual = require('../controllers/annual.js');
 var Base = require('../controllers/base')
 
 module.exports = function(app){
+    app.get('/annual/code',function(req,res,next){
+        Con_annual.code(req,res,next)
+    })
+    app.get('/annual/distinguish',function(req,res,next){
+        Con_annual.distinguish(req,res,next)
+    })
     app.get('/annual/userInfo',function(req,res,next){
         Base.userInfo(req,res,next)
     })
@@ -37,6 +43,9 @@ module.exports = function(app){
     })
     app.get('/annual/chat_record',function(req,res,next){
         Con_annual.chat_record(req,res,next)
+    })
+    app.get('/annual/chat_history',function(req,res,next){
+        Con_annual.chat_history(req,res,next)
     })
     app.get('/annual/chat_upload',function(req,res,next){
         Con_annual.chat_upload(req,res,next)

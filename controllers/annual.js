@@ -10,69 +10,113 @@ var querystring = require('querystring')
 var ws = require('ws')
 global.CONFIG = JSON.parse(fs.readFileSync('./config.json').toString())
 
+this.code = function(req,res){
+    var code = url.parse(req.url,true).query.code
+    Mod_annual.code(code,function(result){
+        res.send(result)
+    })
+}
 this.getUserInfo = function(req,res){
     var query = req.body;
-    var openid = query.openid
-    Mod_annual.check_join(openid,function(result){
-        if(result.length != 0){
-            var day = new Date().getHours() +':'+ new Date().getMinutes() +':'+ new Date().getSeconds();
-            var year = new Date().getFullYear() +'-'+ (new Date().getMonth()+1) +'-'+ new Date().getDate()
-            var signIn_time = year +' '+ day;
-            var obj = {
-                openid:query.openid,
-                unionid:query.unionid,
-                portrait:query.avatarUrl,
-                nickName:query.nickName,
-                signIn_time:signIn_time,
-                category:2
-            }
-            if(query.unionid == undefined){//家属
-                Mod_annual.add_annual_member_f(obj,function(result){
-                    res.send({
-                        code:200,
-                        msg:'新增成功',
-                        value:2
-                    })
-                })
-            }else{
-                Mod_annual.getUserInfo(obj,function(result){
-                    if(result.length != 0){
-                        let obj = {
-                            name:result[0].name,
-                            phone:result[0].phone,
-                            openid:query.openid,
-                            portrait:query.avatarUrl,
-                            signIn_time:signIn_time,
-                            company:result[0].company,
-                            nickName:query.nickName,
-                            category:1
-                        }
-                        Mod_annual.add_annual_member(obj,function(result){//员工
-                            res.send({
-                                code:200,
-                                msg:'新增成功',
-                                value:1
-                            })
-                        })
-                    }else{
-                        Mod_annual.add_annual_member_f(obj,function(result){//家属
-                            res.send({
-                                code:200,
-                                msg:'新增成功',
-                                value:0
-                            })
-                        })
-                    }
-                })
-            }
-        }else{
+    var day = new Date().getHours() +':'+ new Date().getMinutes() +':'+ new Date().getSeconds();
+    var year = new Date().getFullYear() +'-'+ (new Date().getMonth()+1) +'-'+ new Date().getDate()
+    var signIn_time = year +' '+ day;
+    if(query.category == 1){//员工签到
+        var openid = query.openid
+        let obj = {
+            name:query.value.name,
+            phone:query.value.phone,
+            openid:query.openid,
+            avatarUrl:query.avatarUrl,
+            signIn_time:signIn_time,
+            company:query.value.company,
+            category:query.category
+        }
+        Mod_annual.add_annual_member(obj,function(result){
             res.send({
                 code:200,
-                msg:'无记录',
-                value:false
+                msg:'新增成功',
+                value:1
             })
+        })
+    }else if(query.category == 2){//家属签到
+        let obj = {
+            openid:query.openid,
+            avatarUrl:query.avatarUrl,
+            phone:query.value.phone,
+            name:query.value.name,
+            category:query.category,
+            signIn_time:signIn_time
         }
-    })
+        Mod_annual.add_annual_member_f(obj,function(result){
+            res.send({
+                code:200,
+                msg:'新增成功',
+                value:2
+            })
+        })
+    }
+    // Mod_annual.check_join(openid,function(result){
+    //     if(result.length == 0){
+    //         var day = new Date().getHours() +':'+ new Date().getMinutes() +':'+ new Date().getSeconds();
+    //         var year = new Date().getFullYear() +'-'+ (new Date().getMonth()+1) +'-'+ new Date().getDate()
+    //         var signIn_time = year +' '+ day;
+    //         var obj = {
+    //             openid_signIn:query.openid,
+    //             unionid:query.unionid,
+    //             portrait:query.avatarUrl,
+    //             nickName:query.nickName,
+    //             signIn_time:signIn_time,
+    //             category:2
+    //         }
+    //         if(query.unionid == undefined){//家属
+    //             Mod_annual.add_annual_member_f(obj,function(result){
+    //                 res.send({
+    //                     code:200,
+    //                     msg:'新增成功',
+    //                     value:2
+    //                 })
+    //             })
+    //         }else{
+    //             Mod_annual.getUserInfo(obj,function(result){
+    //                 console.log(result)
+    //                 if(result.length != 0){
+    //                     let obj = {
+    //                         name:result[0].name,
+    //                         phone:result[0].phone,
+    //                         openid:query.openid,
+    //                         portrait:query.avatarUrl,
+    //                         signIn_time:signIn_time,
+    //                         company:result[0].company,
+    //                         nickName:query.nickName,
+    //                         category:1
+    //                     }
+    //                     Mod_annual.add_annual_member(obj,function(result){//员工
+    //                         res.send({
+    //                             code:200,
+    //                             msg:'新增成功',
+    //                             value:1
+    //                         })
+    //                     })
+    //                 }else{
+    //                     Mod_annual.add_annual_member_f(obj,function(result){//家属
+    //                         res.send({
+    //                             code:200,
+    //                             msg:'新增成功',
+    //                             value:0
+    //                         })
+    //                     })
+    //                 }
+    //             })
+    //         }
+    //     }else{
+    //         res.send({
+    //             code:200,
+    //             msg:'无记录',
+    //             value:false
+    //         })
+    //     }
+    // })
 }
 this.add_employee = function(req,res){
     var openid = req.body.openid
@@ -99,13 +143,9 @@ this.add_family = function(req,res){
         })
 }
 this.check_signIn = function(req,res){
-    var date = new Date("2018/12/6 16:34:00") - new Date()
     var openid = url.parse(req.url,true).query.openid
     Mod_annual.check_signIn(openid,function(result){
-        res.send({
-            result:result,
-            date:date
-        })
+        res.send(result)
     })
 }
 this.check_employee = function(req,res){
@@ -117,18 +157,7 @@ this.check_employee = function(req,res){
 this.center_personal = function(req,res){
     var openid = url.parse(req.url,true).query.openid;
     Mod_annual.center_personal(openid,function(result){
-        var signIn_id = result[0].signIn_id
-        if(signIn_id == ''){
-            res.send({
-                code:200,
-                data:null
-            })
-        }else{
-            res.send({
-                code:200,
-                data:signIn_id
-            })
-        }
+        res.send(result)
     })
 
 }
@@ -215,6 +244,7 @@ this.websocket = function(server){
     wss.on('connection',(ws) =>{
         ws.on('message',(data) =>{
             var value = JSON.parse(data)
+            console.log(data)
             Mod_annual.chat_record_pull(value,function(result){
                 
             })
@@ -235,6 +265,26 @@ this.chat_record = function(req,res){
             resolve()
         }).then(() =>{
             for(let i = 0; i < result.length; i++){
+                result[i].date = base.formatDate(result[i].date)
+                arr.push(result[i])
+            }
+        }).then(() =>{
+            res.send(JSON.stringify(arr.reverse()))
+        })
+    })
+}
+this.chat_history = function(req,res){
+    var query = url.parse(req.url,true).query
+    console.log(query)
+    var page = query.pages?Number(query.pages):1
+    var pageSize = query.pageSize?Number(query.pageSize):10
+    Mod_annual.chat_history(page,pageSize,function(result){
+        var arr = [];
+        new Promise((resolve,reject) =>{
+            resolve()
+        }).then(() =>{
+            for(let i = 0; i < result.length; i++){
+                result[i].date = base.formatDate(result[i].date)
                 arr.push(result[i])
             }
         }).then(() =>{

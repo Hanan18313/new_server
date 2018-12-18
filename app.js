@@ -168,9 +168,9 @@ global.WX_ID_Annual = function(code,callback){
     }
   })
 }
-global.WX_ID_Alumni = function(code,callback){
-  var appid = CONFIG.appid_alumni;
-  var secret = CONFIG.secret_alumni;
+global.WX_ID_Annual_signIn = function(code,callback){
+  var appid = CONFIG.appid_annual_signIn;
+  var secret = CONFIG.secret_annual_signIn;
   var infoUrl = 'https://api.weixin.qq.com/sns/jscode2session?appid='+appid+'&secret='+secret+'&js_code='+code+'&grant_type=authorization_code';
   request.get(infoUrl,function(err,response,result){
     if(err){

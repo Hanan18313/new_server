@@ -1,6 +1,6 @@
 
 this.setUserInfo = function(obj,callback){
-    let str = 'INSERT INTO annual_basic(open_id,name,phone,category,status,portrait) VALUE("'+obj.openid+'","'+obj.name+'","'+obj.phone+'","1","1","'+obj.avatarUrl+'")';
+    let str = 'INSERT INTO annual_basic(unionid,open_id,name,phone,category,status,portrait) VALUE("'+obj.unionid+'","'+obj.openid+'","'+obj.name+'","'+obj.phone+'","1","1","'+obj.avatarUrl+'")';
     CON(str,function(err,result){
         if(err){
             LOG(err)

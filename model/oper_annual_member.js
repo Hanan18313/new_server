@@ -216,6 +216,16 @@ this.audit_update = function(openid,status,time,callback){
         }
     }) 
 }
+this.audit_update_code = function(openid,status,time,random_code,callback){
+    let str = 'UPDATE annual_basic SET status = "'+status+'", time = "'+time+'",code = "'+random_code+'" WHERE open_id = "'+openid+'"';
+    CON(str,function(err,result){
+        if(err){
+            LOG(err)
+        }else{
+            callback(result)
+        }
+    }) 
+}
 this.authority_list = function(callback){
     let str = 'SELECT * FROM authority';
     CON(str,function(err,result){

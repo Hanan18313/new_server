@@ -1,4 +1,14 @@
 
+this.code = function(code,callback){
+    let str = 'SELECT * from annual_basic WHERE code = "'+code+'"';
+    CON(str,function(err,result){
+        if(err){
+            LOG(err)
+        }else{
+            callback(result)
+        }
+    })
+}
 this.getUserInfo = function(obj,callback){
     let str = 'SELECT * FROM vip_basic WHERE unionid = "'+obj.unionid+'"';
     CONN(str,function(err,result){
@@ -10,8 +20,8 @@ this.getUserInfo = function(obj,callback){
     })
 }
 this.add_annual_member = function(obj,callback){
-  //  let str = 'INSERT INTO annual_member(name,phone,open_id,portrait,signIn_time,company,nick_name,category) VALUE("'+obj.name+'","'+obj.phone+'","'+obj.openid+'","'+obj.portrait+'","'+obj.signIn_time+'","'+obj.company+'","'+obj.nick_name+'","'+obj.category+'")';
-    let str = 'UPDATE annual_member SET portrait = "'+obj.portrait+'",signIn_time = "'+obj.signIn_time+'",nick_name = "'+obj.nickName+'",company = "'+obj.company+'",category = "'+obj.category+'" WHERE open_id = "'+obj.openid+'"' 
+    let str = 'INSERT INTO annual_member(name,phone,open_id,portrait,signIn_time,company,category) VALUE("'+obj.name+'","'+obj.phone+'","'+obj.openid+'","'+obj.avatarUrl+'","'+obj.signIn_time+'","'+obj.company+'","'+obj.category+'")';
+  //  let str = 'UPDATE annual_member SET portrait = "'+obj.portrait+'",signIn_time = "'+obj.signIn_time+'",nick_name = "'+obj.nickName+'",company = "'+obj.company+'",category = "'+obj.category+'" WHERE open_id = "'+obj.openid+'"' 
     CON(str,function(err,result){
         if(err){
             LOG(err)
@@ -28,8 +38,8 @@ this.add_annual_member = function(obj,callback){
     })
 }
 this.add_annual_member_f = function(obj,callback){
-    //let str = 'INSERT INTO annual_member(open_id,portrait,signIn_time,nick_name,category) VALUE("'+obj.openid+'","'+obj.portrait+'","'+obj.signIn_time+'","'+obj.nickName+'","'+obj.category+'")';
-    let str = 'UPDATE annual_member SET portrait = "'+obj.portrait+'",signIn_time = "'+obj.signIn_time+'",nick_name = "'+obj.nickName+'",category = "'+obj.category+'" WHERE open_id = "'+obj.openid+'"' 
+    let str = 'INSERT INTO annual_member(open_id,portrait,signIn_time,name,phone,category) VALUE("'+obj.openid+'","'+obj.avatarUrl+'","'+obj.signIn_time+'","'+obj.name+'","'+obj.phone+'","'+obj.category+'")';
+    //let str = 'UPDATE annual_member SET portrait = "'+obj.portrait+'",signIn_time = "'+obj.signIn_time+'",nick_name = "'+obj.nickName+'",category = "'+obj.category+'" WHERE open_id = "'+obj.openid+'"' 
     CON(str,function(err,result){
         if(err){
             LOG(err)
@@ -39,7 +49,7 @@ this.add_annual_member_f = function(obj,callback){
                 if(err){
                     LOG(err)
                 }else{
-                    let signIn_id = result[0].phone;
+                    let signIn_id = (String(result[0].phone)).substr(7,4);
                     let str = 'INSERT INTO annual_signIn(open_id,signIn_id) VALUE("'+obj.openid+'","'+signIn_id+'")';
                     CON(str,function(err,result){
                         if(err){
@@ -84,7 +94,7 @@ this.check_signIn = function(openid,callback){
     })
 }
 this.check_join = function(openid,callback){
-    let str = 'SELECT * FROM annual_member WHERE open_id = "'+openid+'"';
+    let str = 'SELECT * FROM annual_basic WHERE open_id = "'+openid+'"';
     CON(str,function(err,result){
         if(err){
             LOG(err)
@@ -181,7 +191,7 @@ this.socket_userInfo = function(openid,callback){
 //聊天记录
 this.chat_record_push = function(page,pageSize,callback){
     var startPage = Number((page-1)*pageSize)
-    let str = 'SELECT * FROM chat_record limit '+startPage+','+pageSize;
+    let str = 'SELECT * FROM annual_record ORDER BY date DESC limit '+startPage+','+pageSize;
     CON(str,function(err,result){
         if(err){
             LOG(err)
@@ -191,7 +201,19 @@ this.chat_record_push = function(page,pageSize,callback){
     })
 }
 this.chat_record_pull = function(data,callback){
-    let str = 'INSERT INTO chat_record (nickName,avatarUrl,content,date) VALUE("'+data.nickName+'","'+data.avatarUrl+'","'+data.content+'","'+data.date+'")';
+    let str = 'INSERT INTO annual_record (nick_name,avatarUrl,content,date) VALUE("'+data.nick_name+'","'+data.avatarUrl+'","'+data.content+'","'+data.date+'")';
+    CON(str,function(err,result){
+        if(err){
+            LOG(err)
+        }else{
+            callback(result)
+        }
+    })
+}
+this.chat_history = function(page,pageSize,callback){
+    var startPage = Number((page-1)*pageSize)
+    let str = 'SELECT * FROM annual_record ORDER BY date ASC limit '+startPage+','+pageSize;
+    //let str = 'SELECT * FROM (SELECT * FROM annual_record ORDER BY date DESC) limit '+startPage+','+pageSize
     CON(str,function(err,result){
         if(err){
             LOG(err)

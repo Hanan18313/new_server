@@ -175,12 +175,22 @@ this.audit_update = function(req,res){
     var day = new Date().getHours() +':'+ new Date().getMinutes() +':'+ new Date().getSeconds();
     var year = new Date().getFullYear() +'-'+ (new Date().getMonth()+1) +'-'+ new Date().getDate()
     var time = year +' '+ day;
-    ModOper_annual_member.audit_update(openid,status,time,function(result){
-        res.send({
-            code:200,
-            msg:'更新成功',
+    if(status == 1){
+        var random_code = base.random_code(6)
+        ModOper_annual_member.audit_update_code(openid,status,time,random_code,function(result){
+            res.send({
+                code:200,
+                msg:'更新成功',
+            })
         })
-    })
+    }else{
+        ModOper_annual_member.audit_update(openid,status,time,function(result){
+            res.send({
+                code:200,
+                msg:'更新成功',
+            })
+        })
+    }
 }
 this.authority_list = function(req,res){
     ModOper_annual_member.authority_list(function(result){
