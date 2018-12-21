@@ -1,6 +1,6 @@
 
 this.setUserInfo = function(obj,callback){
-    let str = 'INSERT INTO annual_basic(unionid,open_id,name,phone,category,status,portrait,meeting_id) VALUE("'+obj.unionid+'","'+obj.openid+'","'+obj.name+'","'+obj.phone+'","1","1","'+obj.avatarUrl+'","'+obj.meeting_id+'")';
+    let str = 'INSERT INTO annual_basic(unionid,open_id,user_name,phone,category,status,portrait,meeting_id) VALUE("'+obj.unionid+'","'+obj.openid+'","'+obj.name+'","'+obj.phone+'","1","1","'+obj.avatarUrl+'","'+obj.meeting_id+'")';
     CON(str,function(err,result){
         if(err){
             LOG(err)
@@ -60,7 +60,7 @@ this.person_info = function(openid,callback){
     })
 }
 this.putUserInfo = function(obj,callback){
-    let str = 'UPDATE annual_basic SET name = "'+obj.name+'", family_name = "'+obj.family_name+'", phone = "'+obj.phone+'", status = "'+obj.status+'" WHERE open_id = "'+obj.openid+'" ';
+    let str = 'UPDATE annual_basic SET user_name = "'+obj.name+'", family_name = "'+obj.family_name+'", phone = "'+obj.phone+'", status = "'+obj.status+'" WHERE open_id = "'+obj.openid+'" ';
     CON(str,function(err,result){
         if(err){
             LOG(err)
