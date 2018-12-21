@@ -1,14 +1,4 @@
 
-this.code = function(code,callback){
-    let str = 'SELECT * from annual_basic WHERE code = "'+code+'"';
-    CON(str,function(err,result){
-        if(err){
-            LOG(err)
-        }else{
-            callback(result)
-        }
-    })
-}
 this.getUserInfo = function(obj,callback){
     let str = 'SELECT * FROM vip_basic WHERE unionid = "'+obj.unionid+'"';
     CONN(str,function(err,result){

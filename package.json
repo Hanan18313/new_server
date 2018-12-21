@@ -6,6 +6,7 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
+    "bmaplib": "^1.0.1",
     "body-parser": "^1.18.3",
     "co": "^4.6.0",
     "connect-redis": "^3.4.0",

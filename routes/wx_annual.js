@@ -39,16 +39,19 @@ module.exports = function(app){
     app.put('/wx_annual/goBack',function(req,res,next){
         Con_annual.goBack(req,res,next)
     })
-    app.get('/wx_annual/notice',function(req,res,next){
-        Con_annual.notice(req,res,next)
-    })
     app.get('/wx_annual/v_code',function(req,res,next){
         Con_annual.v_code(req,res,next)
     })
-    app.post('/wx_annual/notice_msg',function(req,res,next){
-        Con_annual.notice_msg(req,res,next)
+    app.put('/wx_annual/join',function(req,res,next){
+        Con_annual.join(req,res,next)
     })
-    app.get('/wx_annual/single_msg',function(req,res,next){
-        Con_annual.single_msg(req,res,next)
+    app.get('/wx_annual/meeting_info',function(req,res,next){
+        Con_annual.meeting_info(req,res,next)
+    })
+    app.post('/wx_annual/signIn',function(req,res,next){
+        Con_annual.signIn(req,res,next)
+    })
+    app.get('/wx_annual/check_signIn',function(req,res,next){
+        Con_annual.check_signIn(req,res,next)
     })
 }

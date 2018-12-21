@@ -10,12 +10,6 @@ var querystring = require('querystring')
 var ws = require('ws')
 global.CONFIG = JSON.parse(fs.readFileSync('./config.json').toString())
 
-this.code = function(req,res){
-    var code = url.parse(req.url,true).query.code
-    Mod_annual.code(code,function(result){
-        res.send(result)
-    })
-}
 this.getUserInfo = function(req,res){
     var query = req.body;
     var day = new Date().getHours() +':'+ new Date().getMinutes() +':'+ new Date().getSeconds();

@@ -1,6 +1,6 @@
 
 this.setUserInfo = function(obj,callback){
-    let str = 'INSERT INTO annual_basic(unionid,open_id,name,phone,category,status,portrait) VALUE("'+obj.unionid+'","'+obj.openid+'","'+obj.name+'","'+obj.phone+'","1","1","'+obj.avatarUrl+'")';
+    let str = 'INSERT INTO annual_basic(unionid,open_id,name,phone,category,status,portrait,meeting_id) VALUE("'+obj.unionid+'","'+obj.openid+'","'+obj.name+'","'+obj.phone+'","1","1","'+obj.avatarUrl+'","'+obj.meeting_id+'")';
     CON(str,function(err,result){
         if(err){
             LOG(err)
@@ -9,8 +9,8 @@ this.setUserInfo = function(obj,callback){
         }
     })
 }
-this.setUserInfo_f = function(openid,avatarUrl,callback){
-    let str = 'INSERT INTO annual_basic(open_id,category,portrait) VALUE("'+openid+'","2","'+avatarUrl+'")';
+this.setUserInfo_f = function(openid,avatarUrl,meeting_id,callback){
+    let str = 'INSERT INTO annual_basic(open_id,category,portrait,meeting_id) VALUE("'+openid+'","2","'+avatarUrl+'","'+meeting_id+'")';
     CON(str,function(err,result){
         if(err){
             LOG(err)
@@ -30,7 +30,7 @@ this.getEmployee = function(unionid,callback){
     })
 }
 this.checkInfo = function(openid,callback){
-    let str = 'SELECT * FROM annual_basic WHERE open_id = "'+openid+'"';
+    let str = 'SELECT * FROM annual_basic INNER JOIN meeting ON annual_basic.meeting_id = meeting.id WHERE open_id = "'+openid+'"';
     CON(str,function(err,result){
         if(err){
             LOG(err)
@@ -80,8 +80,8 @@ this.goBack = function(openid,callback){
         }
     })
 }
-this.notice_msg = function(obj,callback){
-    let str = 'INSERT INTO annual_record(open_id,avatarUrl,title,content,date,status) VALUE("'+obj.openid+'","'+obj.avatarUrl+'","'+obj.title+'","'+obj.content+'","'+obj.date+'","1")';
+this.join = function(isJoin,callback){
+    let str = 'UPDATE annual_basic SET isJoin = "'+isJoin+'"';
     CON(str,function(err,result){
         if(err){
             LOG(err)
@@ -90,8 +90,17 @@ this.notice_msg = function(obj,callback){
         }
     })
 }
-this.notice = function(callback){
-    let str = 'SELECT * FROM annual_record INNER JOIN annual_basic ON annual_record.open_id = annual_basic.open_id ORDER BY date desc limit 10';
+//自动年会状态
+this.meeting_status = function(status){
+    let str = 'UPDATE meeting SET status = "'+status+'"';
+    CON(str,function(err,result){
+        if(err){
+            LOG(err)
+        }
+    })
+}
+this.meeting_info = function(callback){
+    let str = 'SELECT * FROM meeting';
     CON(str,function(err,result){
         if(err){
             LOG(err)
@@ -100,8 +109,26 @@ this.notice = function(callback){
         }
     })
 }
-this.single_msg = function(openid,callback){
-    let str = 'SELECT * FROM annual_record WHERE open_id = "'+openid+'" ORDER BY date desc limit 1';
+//年会中模块
+this.signIn = function(obj,callback){
+    let str = 'INSERT INTO annual_member(name,phone,open_id,portrait,signIn_time,category) VALUE("'+obj.name+'","'+obj.phone+'","'+obj.openid+'","'+obj.portrait+'","'+obj.signIn_time+'","'+obj.category+'")';
+    CON(str,function(err,result){
+        if(err){
+            LOG(err)
+        }else{
+            let str = 'INSERT INTO annual_signIn(signIn_id,open_id) VALUE("'+obj.signIn_id+'","'+obj.openid+'")'
+            CON(str,function(err,result){
+                if(err){
+                    LOG(err)
+                }else{
+                    callback(result)
+                }
+            })
+        }
+    })
+}
+this.check_signIn = function(openid,callback){
+    let str = 'SELECT * FROM annual_member INNER JOIN annual_signIn ON annual_member.open_id = annual_signIn.open_id WHERE annual_member.open_id = "'+openid+'"';
     CON(str,function(err,result){
         if(err){
             LOG(err)
@@ -109,22 +136,4 @@ this.single_msg = function(openid,callback){
             callback(result)
         }
     })
-}
-this.authority= function(obj,callback){
-    let str = 'SELECT * FROM authority WHERE open_id = "'+obj.openid+'"';
-    CON(str,function(err,result){
-        if(err){
-            LOG(err)
-        }else{
-            callback(result)
-        }
-    }) 
-}
-this.Self_update = function(){
-    let  str = 'UPDATE annual_record SET status = "0"';
-    CON(str,function(err,result){
-        if(err){
-            LOG(err)
-        }
-    }) 
 }

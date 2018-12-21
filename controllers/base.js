@@ -23,30 +23,32 @@ this.userInfo = function(req,res){
         })
     }
 }
-this.random_code = function randomString(len) {
-    　　len = len || 6;
-    　　var $chars = 'ABCDEFGHJKMNPQRSTWXYZabcdefhijkmnprstwxyz2345678';    /****默认去掉了容易混淆的字符oOLl,9gq,Vv,Uu,I1****/
-    　　var maxPos = $chars.length;
-    　　var pwd = '';
-    　　for (i = 0; i < len; i++) {
-    　　　　pwd += $chars.charAt(Math.floor(Math.random() * maxPos));
-    　　}
-    　　return pwd;
-    }
-    this.formatDate =  function formatDate(time){
-        var date = new Date(time);
-    
-        var year = date.getFullYear(),
-            month = date.getMonth() + 1,//月份是从0开始的
-            day = date.getDate(),
-            hour = date.getHours(),
-            min = date.getMinutes(),
-            sec = date.getSeconds();
-        var newTime = year + '-' +
-                    month + '-' +
-                    day + ' ' +
-                    hour + ':' +
-                    min + ':' +
-                    sec;
-        return newTime;         
-    }
+/** 
+ * 时间格式化
+*/
+this.formatDate =  function formatDate(time){
+    var date = new Date(time);
+
+    var year = date.getFullYear(),
+        month = date.getMonth() + 1,//月份是从0开始的
+        day = date.getDate(),
+        hour = date.getHours(),
+        min = date.getMinutes(),
+        sec = date.getSeconds();
+    var newTime = year + '-' +
+                month + '-' +
+                day + ' ' +
+                hour + ':' +
+                min + ':' +
+                sec;
+    return newTime;         
+}
+/** 
+ * 当前时间
+*/
+this.now_time = function(){
+    var day = new Date().getHours() +':'+ new Date().getMinutes() +':'+ new Date().getSeconds();
+    var year = new Date().getFullYear() +'-'+ (new Date().getMonth()+1) +'-'+ new Date().getDate()
+    var signIn_time = year +' '+ day;
+    return signIn_time
+}
