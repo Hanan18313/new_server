@@ -159,10 +159,8 @@ this.signIn = function(req,res){
     var lng1 = params.longitude
     console.log(params)
     Mod_annual.checkInfo(openid,function(result){
-        var bp1 = new BMap.Point(120.18117,30.32122)
+        var bp1 = new BMap.Point(lng1,lat1)
         var bp2 = new BMap.Point(Number(result[0].longitude),Number(result[0].latitude))
-        console.log(result[0].longitude)
-        console.log(result[0].latitude)
         var getDistance = BMaplib.GeoUtils.getDistance(bp1,bp2)
         console.log(BMaplib.GeoUtils.getDistance(bp2,bp1))
         if(result[0].status == 1){
