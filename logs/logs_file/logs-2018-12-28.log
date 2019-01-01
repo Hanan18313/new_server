@@ -1,0 +1,647 @@
+[2018-12-28T09:38:00.026] [INFO] log_file - 2018-12-28 9:38:0执行的此任务
+[2018-12-28T09:38:10.008] [INFO] log_file - 2018-12-28 9:38:10执行的此任务
+[2018-12-28T09:38:30.024] [INFO] log_file - 2018-12-28 9:38:30执行的此任务
+[2018-12-28T10:07:35.041] [INFO] log_file - { Error: ER_TRUNCATED_WRONG_VALUE: Incorrect datetime value: '2019-01-12T10:00:00.000Z' for column 'start_time' at row 1
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_TRUNCATED_WRONG_VALUE',
+  errno: 1292,
+  sqlMessage: 'Incorrect datetime value: \'2019-01-12T10:00:00.000Z\' for column \'start_time\' at row 1',
+  sqlState: '22007',
+  index: 0,
+  sql: 'UPDATE meeting SET start_time = "2019-01-12T10:00:00.000Z", place = "瑞莱克斯大酒店杭州石祥店",note = "员工及其家属须在2019年1月12日之前提交信息以及是否参加年会；12日当天在小程序内签到。"' }
+[2018-12-28T10:09:16.271] [INFO] log_file - { Error: ER_TRUNCATED_WRONG_VALUE: Incorrect datetime value: '2019-01-12T10:00:00.000Z' for column 'start_time' at row 1
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_TRUNCATED_WRONG_VALUE',
+  errno: 1292,
+  sqlMessage: 'Incorrect datetime value: \'2019-01-12T10:00:00.000Z\' for column \'start_time\' at row 1',
+  sqlState: '22007',
+  index: 0,
+  sql: 'UPDATE meeting SET start_time = "2019-01-12T10:00:00.000Z", place = "瑞莱克斯大酒店杭州石祥店",note = "员工及其家属须在2019年1月12日之前提交信息以及是否参加年会；12日当天在小程序内签到。"' }
+[2018-12-28T10:09:20.300] [INFO] log_file - { Error: ER_TRUNCATED_WRONG_VALUE: Incorrect datetime value: '2019-01-12T10:00:00.000Z' for column 'start_time' at row 1
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_TRUNCATED_WRONG_VALUE',
+  errno: 1292,
+  sqlMessage: 'Incorrect datetime value: \'2019-01-12T10:00:00.000Z\' for column \'start_time\' at row 1',
+  sqlState: '22007',
+  index: 0,
+  sql: 'UPDATE meeting SET start_time = "2019-01-12T10:00:00.000Z", place = "瑞莱克斯大酒店杭州石祥店",note = "员工及其家属须在2019年1月12日之前提交信息以及是否参加年会；12日当天在小程序内签到。"' }
+[2018-12-28T10:09:44.799] [INFO] log_file - { Error: ER_TRUNCATED_WRONG_VALUE: Incorrect datetime value: '2019-01-12T10:00:00.000Z' for column 'start_time' at row 1
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_TRUNCATED_WRONG_VALUE',
+  errno: 1292,
+  sqlMessage: 'Incorrect datetime value: \'2019-01-12T10:00:00.000Z\' for column \'start_time\' at row 1',
+  sqlState: '22007',
+  index: 0,
+  sql: 'UPDATE meeting SET start_time = "2019-01-12T10:00:00.000Z", place = "瑞莱克斯大酒店杭州石祥店",note = "员工及其家属须在2019年1月12日之前提交信息以及是否参加年会；12日当天在小程序内签到。"' }
+[2018-12-28T10:10:05.630] [INFO] log_file - { Error: ER_TRUNCATED_WRONG_VALUE: Incorrect datetime value: '2019-01-12T10:00:00.000Z' for column 'start_time' at row 1
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_TRUNCATED_WRONG_VALUE',
+  errno: 1292,
+  sqlMessage: 'Incorrect datetime value: \'2019-01-12T10:00:00.000Z\' for column \'start_time\' at row 1',
+  sqlState: '22007',
+  index: 0,
+  sql: 'UPDATE meeting SET start_time = "2019-01-12T10:00:00.000Z", place = "瑞莱克斯大酒店杭州石祥店",note = "员工及其家属须在2019年1月12日之前提交信息以及是否参加年会；12日当天在小程序内签到。"' }
+[2018-12-28T10:10:05.748] [INFO] log_file - { Error: ER_TRUNCATED_WRONG_VALUE: Incorrect datetime value: '2019-01-12T10:00:00.000Z' for column 'start_time' at row 1
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_TRUNCATED_WRONG_VALUE',
+  errno: 1292,
+  sqlMessage: 'Incorrect datetime value: \'2019-01-12T10:00:00.000Z\' for column \'start_time\' at row 1',
+  sqlState: '22007',
+  index: 0,
+  sql: 'UPDATE meeting SET start_time = "2019-01-12T10:00:00.000Z", place = "瑞莱克斯大酒店杭州石祥店",note = "员工及其家属须在2019年1月12日之前提交信息以及是否参加年会；12日当天在小程序内签到。"' }
+[2018-12-28T10:10:05.917] [INFO] log_file - { Error: ER_TRUNCATED_WRONG_VALUE: Incorrect datetime value: '2019-01-12T10:00:00.000Z' for column 'start_time' at row 1
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_TRUNCATED_WRONG_VALUE',
+  errno: 1292,
+  sqlMessage: 'Incorrect datetime value: \'2019-01-12T10:00:00.000Z\' for column \'start_time\' at row 1',
+  sqlState: '22007',
+  index: 0,
+  sql: 'UPDATE meeting SET start_time = "2019-01-12T10:00:00.000Z", place = "瑞莱克斯大酒店杭州石祥店",note = "员工及其家属须在2019年1月12日之前提交信息以及是否参加年会；12日当天在小程序内签到。"' }
+[2018-12-28T10:10:06.057] [INFO] log_file - { Error: ER_TRUNCATED_WRONG_VALUE: Incorrect datetime value: '2019-01-12T10:00:00.000Z' for column 'start_time' at row 1
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_TRUNCATED_WRONG_VALUE',
+  errno: 1292,
+  sqlMessage: 'Incorrect datetime value: \'2019-01-12T10:00:00.000Z\' for column \'start_time\' at row 1',
+  sqlState: '22007',
+  index: 0,
+  sql: 'UPDATE meeting SET start_time = "2019-01-12T10:00:00.000Z", place = "瑞莱克斯大酒店杭州石祥店",note = "员工及其家属须在2019年1月12日之前提交信息以及是否参加年会；12日当天在小程序内签到。"' }
+[2018-12-28T10:10:06.204] [INFO] log_file - { Error: ER_TRUNCATED_WRONG_VALUE: Incorrect datetime value: '2019-01-12T10:00:00.000Z' for column 'start_time' at row 1
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_TRUNCATED_WRONG_VALUE',
+  errno: 1292,
+  sqlMessage: 'Incorrect datetime value: \'2019-01-12T10:00:00.000Z\' for column \'start_time\' at row 1',
+  sqlState: '22007',
+  index: 0,
+  sql: 'UPDATE meeting SET start_time = "2019-01-12T10:00:00.000Z", place = "瑞莱克斯大酒店杭州石祥店",note = "员工及其家属须在2019年1月12日之前提交信息以及是否参加年会；12日当天在小程序内签到。"' }
+[2018-12-28T11:37:42.359] [INFO] log_file - { Error: ER_BAD_FIELD_ERROR: Unknown column 'prize_id' in 'where clause'
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlMessage: 'Unknown column \'prize_id\' in \'where clause\'',
+  sqlState: '42S22',
+  index: 0,
+  sql: 'SELECT * FROM annual_signIn WHERE prize_id = "5"' }
+[2018-12-28T12:08:22.447] [INFO] log_file - { Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'annual_draw INNER JOIN annual_prize ON annual_draw.prize_id = annual_prize.id RI' at line 1
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'annual_draw INNER JOIN annual_prize ON annual_draw.prize_id = annual_prize.id RI\' at line 1',
+  sqlState: '42000',
+  index: 0,
+  sql: 'SELECT * annual_draw INNER JOIN annual_prize ON annual_draw.prize_id = annual_prize.id RIGHT JOIN annual_member ON annual_draw.open_id = annual_member.open_id WHERE annual_member.category = "1"' }
+[2018-12-28T12:10:22.448] [INFO] log_file - { Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'annual_draw INNER JOIN annual_prize ON annual_draw.prize_id = annual_prize.id RI' at line 1
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'annual_draw INNER JOIN annual_prize ON annual_draw.prize_id = annual_prize.id RI\' at line 1',
+  sqlState: '42000',
+  index: 0,
+  sql: 'SELECT * annual_draw INNER JOIN annual_prize ON annual_draw.prize_id = annual_prize.id RIGHT JOIN annual_member ON annual_draw.open_id = annual_member.open_id WHERE annual_member.category = "1"' }
+[2018-12-28T12:32:49.875] [INFO] log_file - { Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'annual_draw INNER JOIN annual_prize ON annual_draw.prize_id = annual_prize.id RI' at line 1
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'annual_draw INNER JOIN annual_prize ON annual_draw.prize_id = annual_prize.id RI\' at line 1',
+  sqlState: '42000',
+  index: 0,
+  sql: 'SELECT * annual_draw INNER JOIN annual_prize ON annual_draw.prize_id = annual_prize.id RIGHT JOIN annual_member ON annual_draw.open_id = annual_member.open_id WHERE annual_member.category = "1"' }
+[2018-12-28T12:32:53.120] [INFO] log_file - { Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'annual_draw INNER JOIN annual_prize ON annual_draw.prize_id = annual_prize.id RI' at line 1
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'annual_draw INNER JOIN annual_prize ON annual_draw.prize_id = annual_prize.id RI\' at line 1',
+  sqlState: '42000',
+  index: 0,
+  sql: 'SELECT * annual_draw INNER JOIN annual_prize ON annual_draw.prize_id = annual_prize.id RIGHT JOIN annual_member ON annual_draw.open_id = annual_member.open_id WHERE annual_member.category = "1"' }
+[2018-12-28T12:33:14.339] [INFO] log_file - { Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'annual_draw INNER JOIN annual_prize ON annual_draw.prize_id = annual_prize.id RI' at line 1
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'annual_draw INNER JOIN annual_prize ON annual_draw.prize_id = annual_prize.id RI\' at line 1',
+  sqlState: '42000',
+  index: 0,
+  sql: 'SELECT * annual_draw INNER JOIN annual_prize ON annual_draw.prize_id = annual_prize.id RIGHT JOIN annual_member ON annual_draw.open_id = annual_member.open_id WHERE annual_member.category = "1"' }
+[2018-12-28T12:33:23.440] [INFO] log_file - { Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'annual_draw INNER JOIN annual_prize ON annual_draw.prize_id = annual_prize.id RI' at line 1
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'annual_draw INNER JOIN annual_prize ON annual_draw.prize_id = annual_prize.id RI\' at line 1',
+  sqlState: '42000',
+  index: 0,
+  sql: 'SELECT * annual_draw INNER JOIN annual_prize ON annual_draw.prize_id = annual_prize.id RIGHT JOIN annual_member ON annual_draw.open_id = annual_member.open_id WHERE annual_member.category = "1"' }
+[2018-12-28T12:53:07.083] [INFO] log_file - { Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'annual_draw INNER JOIN annual_prize ON annual_draw.prize_id = annual_prize.id RI' at line 1
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'annual_draw INNER JOIN annual_prize ON annual_draw.prize_id = annual_prize.id RI\' at line 1',
+  sqlState: '42000',
+  index: 0,
+  sql: 'SELECT * annual_draw INNER JOIN annual_prize ON annual_draw.prize_id = annual_prize.id RIGHT JOIN annual_member ON annual_draw.open_id = annual_member.open_id WHERE annual_member.category = "1"' }
+[2018-12-28T12:54:41.067] [INFO] log_file - { Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'annual_draw INNER JOIN annual_prize ON annual_draw.prize_id = annual_prize.id' at line 1
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Handshake.onConnect (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:64:7)
+    at Handshake.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Handshake._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Handshake.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Handshake.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'annual_draw INNER JOIN annual_prize ON annual_draw.prize_id = annual_prize.id\' at line 1',
+  sqlState: '42000',
+  index: 0,
+  sql: 'SELECT * annual_draw INNER JOIN annual_prize ON annual_draw.prize_id = annual_prize.id' }
+[2018-12-28T12:54:47.699] [INFO] log_file - { Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'annual_draw INNER JOIN annual_prize ON annual_draw.prize_id = annual_prize.id' at line 1
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'annual_draw INNER JOIN annual_prize ON annual_draw.prize_id = annual_prize.id\' at line 1',
+  sqlState: '42000',
+  index: 0,
+  sql: 'SELECT * annual_draw INNER JOIN annual_prize ON annual_draw.prize_id = annual_prize.id' }
+[2018-12-28T12:56:47.703] [INFO] log_file - { Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'annual_draw INNER JOIN annual_prize ON annual_draw.prize_id = annual_prize.id' at line 1
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'annual_draw INNER JOIN annual_prize ON annual_draw.prize_id = annual_prize.id\' at line 1',
+  sqlState: '42000',
+  index: 0,
+  sql: 'SELECT * annual_draw INNER JOIN annual_prize ON annual_draw.prize_id = annual_prize.id' }
+[2018-12-28T13:01:58.901] [INFO] log_file - { Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'annual_draw LEFT JOIN annual_prize ON annual_draw.prize_id = annual_prize.id RIG' at line 1
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'annual_draw LEFT JOIN annual_prize ON annual_draw.prize_id = annual_prize.id RIG\' at line 1',
+  sqlState: '42000',
+  index: 0,
+  sql: 'SELECT * annual_draw LEFT JOIN annual_prize ON annual_draw.prize_id = annual_prize.id RIGHT JOIN annual_member ON annual_draw.open_id = annual_member.open_id WHERE annual_member.category = "1"' }
+[2018-12-28T13:02:48.469] [INFO] log_file - { Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'annual_draw LEFT JOIN annual_prize ON annual_draw.prize_id = annual_prize.id RIG' at line 1
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'annual_draw LEFT JOIN annual_prize ON annual_draw.prize_id = annual_prize.id RIG\' at line 1',
+  sqlState: '42000',
+  index: 0,
+  sql: 'SELECT * annual_draw LEFT JOIN annual_prize ON annual_draw.prize_id = annual_prize.id RIGHT JOIN annual_member ON annual_draw.open_id = annual_member.open_id WHERE annual_member.category = "1"' }
+[2018-12-28T13:03:58.902] [INFO] log_file - { Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'annual_draw LEFT JOIN annual_prize ON annual_draw.prize_id = annual_prize.id RIG' at line 1
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'annual_draw LEFT JOIN annual_prize ON annual_draw.prize_id = annual_prize.id RIG\' at line 1',
+  sqlState: '42000',
+  index: 0,
+  sql: 'SELECT * annual_draw LEFT JOIN annual_prize ON annual_draw.prize_id = annual_prize.id RIGHT JOIN annual_member ON annual_draw.open_id = annual_member.open_id WHERE annual_member.category = "1"' }

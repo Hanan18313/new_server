@@ -1,0 +1,1176 @@
+[2018-12-26T10:02:58.734] [INFO] log_file - { Error: ER_NO_SUCH_TABLE: Table 'wx_signin.authority' doesn't exist
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlMessage: 'Table \'wx_signin.authority\' doesn\'t exist',
+  sqlState: '42S02',
+  index: 0,
+  sql: 'SELECT * FROM authority' }
+[2018-12-26T10:03:20.695] [INFO] log_file - { Error: ER_NO_SUCH_TABLE: Table 'wx_signin.authority' doesn't exist
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlMessage: 'Table \'wx_signin.authority\' doesn\'t exist',
+  sqlState: '42S02',
+  index: 0,
+  sql: 'SELECT * FROM authority' }
+[2018-12-26T10:03:34.602] [INFO] log_file - { Error: ER_NO_SUCH_TABLE: Table 'wx_signin.authority' doesn't exist
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlMessage: 'Table \'wx_signin.authority\' doesn\'t exist',
+  sqlState: '42S02',
+  index: 0,
+  sql: 'SELECT * FROM authority' }
+[2018-12-26T10:03:38.787] [INFO] log_file - { Error: ER_NO_SUCH_TABLE: Table 'wx_signin.authority' doesn't exist
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlMessage: 'Table \'wx_signin.authority\' doesn\'t exist',
+  sqlState: '42S02',
+  index: 0,
+  sql: 'SELECT * FROM authority' }
+[2018-12-26T10:04:58.737] [INFO] log_file - { Error: ER_NO_SUCH_TABLE: Table 'wx_signin.authority' doesn't exist
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlMessage: 'Table \'wx_signin.authority\' doesn\'t exist',
+  sqlState: '42S02',
+  index: 0,
+  sql: 'SELECT * FROM authority' }
+[2018-12-26T10:05:11.157] [INFO] log_file - { Error: ER_NO_SUCH_TABLE: Table 'wx_signin.authority' doesn't exist
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlMessage: 'Table \'wx_signin.authority\' doesn\'t exist',
+  sqlState: '42S02',
+  index: 0,
+  sql: 'SELECT * FROM authority' }
+[2018-12-26T10:05:17.867] [INFO] log_file - { Error: ER_NO_SUCH_TABLE: Table 'wx_signin.authority' doesn't exist
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlMessage: 'Table \'wx_signin.authority\' doesn\'t exist',
+  sqlState: '42S02',
+  index: 0,
+  sql: 'SELECT * FROM authority' }
+[2018-12-26T10:05:20.694] [INFO] log_file - { Error: ER_NO_SUCH_TABLE: Table 'wx_signin.authority' doesn't exist
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlMessage: 'Table \'wx_signin.authority\' doesn\'t exist',
+  sqlState: '42S02',
+  index: 0,
+  sql: 'SELECT * FROM authority' }
+[2018-12-26T10:06:21.508] [INFO] log_file - { Error: ER_NO_SUCH_TABLE: Table 'wx_signin.authority' doesn't exist
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlMessage: 'Table \'wx_signin.authority\' doesn\'t exist',
+  sqlState: '42S02',
+  index: 0,
+  sql: 'SELECT * FROM authority' }
+[2018-12-26T10:06:24.187] [INFO] log_file - { Error: ER_NO_SUCH_TABLE: Table 'wx_signin.authority' doesn't exist
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlMessage: 'Table \'wx_signin.authority\' doesn\'t exist',
+  sqlState: '42S02',
+  index: 0,
+  sql: 'SELECT * FROM authority' }
+[2018-12-26T10:06:58.746] [INFO] log_file - { Error: ER_NO_SUCH_TABLE: Table 'wx_signin.authority' doesn't exist
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlMessage: 'Table \'wx_signin.authority\' doesn\'t exist',
+  sqlState: '42S02',
+  index: 0,
+  sql: 'SELECT * FROM authority' }
+[2018-12-26T10:07:11.165] [INFO] log_file - { Error: ER_NO_SUCH_TABLE: Table 'wx_signin.authority' doesn't exist
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlMessage: 'Table \'wx_signin.authority\' doesn\'t exist',
+  sqlState: '42S02',
+  index: 0,
+  sql: 'SELECT * FROM authority' }
+[2018-12-26T10:07:17.868] [INFO] log_file - { Error: ER_NO_SUCH_TABLE: Table 'wx_signin.authority' doesn't exist
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlMessage: 'Table \'wx_signin.authority\' doesn\'t exist',
+  sqlState: '42S02',
+  index: 0,
+  sql: 'SELECT * FROM authority' }
+[2018-12-26T10:07:20.704] [INFO] log_file - { Error: ER_NO_SUCH_TABLE: Table 'wx_signin.authority' doesn't exist
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlMessage: 'Table \'wx_signin.authority\' doesn\'t exist',
+  sqlState: '42S02',
+  index: 0,
+  sql: 'SELECT * FROM authority' }
+[2018-12-26T10:08:21.546] [INFO] log_file - { Error: ER_NO_SUCH_TABLE: Table 'wx_signin.authority' doesn't exist
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlMessage: 'Table \'wx_signin.authority\' doesn\'t exist',
+  sqlState: '42S02',
+  index: 0,
+  sql: 'SELECT * FROM authority' }
+[2018-12-26T10:08:24.204] [INFO] log_file - { Error: ER_NO_SUCH_TABLE: Table 'wx_signin.authority' doesn't exist
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlMessage: 'Table \'wx_signin.authority\' doesn\'t exist',
+  sqlState: '42S02',
+  index: 0,
+  sql: 'SELECT * FROM authority' }
+[2018-12-26T10:08:58.787] [INFO] log_file - { Error: ER_NO_SUCH_TABLE: Table 'wx_signin.authority' doesn't exist
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlMessage: 'Table \'wx_signin.authority\' doesn\'t exist',
+  sqlState: '42S02',
+  index: 0,
+  sql: 'SELECT * FROM authority' }
+[2018-12-26T10:09:11.167] [INFO] log_file - { Error: ER_NO_SUCH_TABLE: Table 'wx_signin.authority' doesn't exist
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlMessage: 'Table \'wx_signin.authority\' doesn\'t exist',
+  sqlState: '42S02',
+  index: 0,
+  sql: 'SELECT * FROM authority' }
+[2018-12-26T10:09:17.907] [INFO] log_file - { Error: ER_NO_SUCH_TABLE: Table 'wx_signin.authority' doesn't exist
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlMessage: 'Table \'wx_signin.authority\' doesn\'t exist',
+  sqlState: '42S02',
+  index: 0,
+  sql: 'SELECT * FROM authority' }
+[2018-12-26T10:09:20.710] [INFO] log_file - { Error: ER_NO_SUCH_TABLE: Table 'wx_signin.authority' doesn't exist
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlMessage: 'Table \'wx_signin.authority\' doesn\'t exist',
+  sqlState: '42S02',
+  index: 0,
+  sql: 'SELECT * FROM authority' }
+[2018-12-26T10:10:21.556] [INFO] log_file - { Error: ER_NO_SUCH_TABLE: Table 'wx_signin.authority' doesn't exist
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlMessage: 'Table \'wx_signin.authority\' doesn\'t exist',
+  sqlState: '42S02',
+  index: 0,
+  sql: 'SELECT * FROM authority' }
+[2018-12-26T10:10:24.208] [INFO] log_file - { Error: ER_NO_SUCH_TABLE: Table 'wx_signin.authority' doesn't exist
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlMessage: 'Table \'wx_signin.authority\' doesn\'t exist',
+  sqlState: '42S02',
+  index: 0,
+  sql: 'SELECT * FROM authority' }
+[2018-12-26T10:10:58.792] [INFO] log_file - { Error: ER_NO_SUCH_TABLE: Table 'wx_signin.authority' doesn't exist
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlMessage: 'Table \'wx_signin.authority\' doesn\'t exist',
+  sqlState: '42S02',
+  index: 0,
+  sql: 'SELECT * FROM authority' }
+[2018-12-26T10:11:11.174] [INFO] log_file - { Error: ER_NO_SUCH_TABLE: Table 'wx_signin.authority' doesn't exist
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlMessage: 'Table \'wx_signin.authority\' doesn\'t exist',
+  sqlState: '42S02',
+  index: 0,
+  sql: 'SELECT * FROM authority' }
+[2018-12-26T10:11:17.908] [INFO] log_file - { Error: ER_NO_SUCH_TABLE: Table 'wx_signin.authority' doesn't exist
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlMessage: 'Table \'wx_signin.authority\' doesn\'t exist',
+  sqlState: '42S02',
+  index: 0,
+  sql: 'SELECT * FROM authority' }
+[2018-12-26T10:11:20.711] [INFO] log_file - { Error: ER_NO_SUCH_TABLE: Table 'wx_signin.authority' doesn't exist
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlMessage: 'Table \'wx_signin.authority\' doesn\'t exist',
+  sqlState: '42S02',
+  index: 0,
+  sql: 'SELECT * FROM authority' }
+[2018-12-26T10:12:21.553] [INFO] log_file - { Error: ER_NO_SUCH_TABLE: Table 'wx_signin.authority' doesn't exist
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlMessage: 'Table \'wx_signin.authority\' doesn\'t exist',
+  sqlState: '42S02',
+  index: 0,
+  sql: 'SELECT * FROM authority' }
+[2018-12-26T10:55:51.607] [INFO] log_file - { Error: ER_SP_UNDECLARED_VAR: Undeclared variable: NaN
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_SP_UNDECLARED_VAR',
+  errno: 1327,
+  sqlMessage: 'Undeclared variable: NaN',
+  sqlState: '42000',
+  index: 0,
+  sql: 'SELECT * FROM annual_basic limit NaN,10' }
+[2018-12-26T10:56:16.646] [INFO] log_file - { Error: ER_SP_UNDECLARED_VAR: Undeclared variable: NaN
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_SP_UNDECLARED_VAR',
+  errno: 1327,
+  sqlMessage: 'Undeclared variable: NaN',
+  sqlState: '42000',
+  index: 0,
+  sql: 'SELECT * FROM annual_basic limit NaN,10' }
+[2018-12-26T10:56:29.573] [INFO] log_file - { Error: ER_SP_UNDECLARED_VAR: Undeclared variable: NaN
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_SP_UNDECLARED_VAR',
+  errno: 1327,
+  sqlMessage: 'Undeclared variable: NaN',
+  sqlState: '42000',
+  index: 0,
+  sql: 'SELECT * FROM annual_basic limit NaN,10' }
+[2018-12-26T10:56:53.402] [INFO] log_file - { Error: ER_SP_UNDECLARED_VAR: Undeclared variable: NaN
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_SP_UNDECLARED_VAR',
+  errno: 1327,
+  sqlMessage: 'Undeclared variable: NaN',
+  sqlState: '42000',
+  index: 0,
+  sql: 'SELECT * FROM annual_basic limit NaN,10' }
+[2018-12-26T10:56:58.877] [INFO] log_file - { Error: ER_SP_UNDECLARED_VAR: Undeclared variable: NaN
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_SP_UNDECLARED_VAR',
+  errno: 1327,
+  sqlMessage: 'Undeclared variable: NaN',
+  sqlState: '42000',
+  index: 0,
+  sql: 'SELECT * FROM annual_basic limit NaN,10' }
+[2018-12-26T10:59:25.781] [INFO] log_file - { Error: ER_BAD_FIELD_ERROR: Unknown column 'openid' in 'where clause'
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlMessage: 'Unknown column \'openid\' in \'where clause\'',
+  sqlState: '42S22',
+  index: 0,
+  sql: 'SELECT COUNT(*) FROM annual_basic WHERE openid = "o9De15J_FKzMx95TbX7WKoyYXTqk"' }
+[2018-12-26T10:59:25.787] [INFO] log_file - { Error: ER_BAD_FIELD_ERROR: Unknown column 'openid' in 'where clause'
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlMessage: 'Unknown column \'openid\' in \'where clause\'',
+  sqlState: '42S22',
+  index: 0,
+  sql: 'SELECT COUNT(*) FROM annual_basic WHERE openid = "o9De15J_FKzMx95TbX7WKoyYXTqk"' }
+[2018-12-26T11:07:22.771] [INFO] log_file - { Error: ER_BAD_FIELD_ERROR: Unknown column 'openid' in 'where clause'
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlMessage: 'Unknown column \'openid\' in \'where clause\'',
+  sqlState: '42S22',
+  index: 0,
+  sql: 'SELECT id FROM annual_basic WHERE openid = "o9De15J_FKzMx95TbX7WKoyYXTqk"' }
+[2018-12-26T11:07:22.776] [INFO] log_file - { Error: ER_BAD_FIELD_ERROR: Unknown column 'openid' in 'where clause'
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlMessage: 'Unknown column \'openid\' in \'where clause\'',
+  sqlState: '42S22',
+  index: 0,
+  sql: 'SELECT id FROM annual_basic WHERE openid = "o9De15J_FKzMx95TbX7WKoyYXTqk"' }
+[2018-12-26T11:13:06.182] [INFO] log_file - { Error: ER_SP_UNDECLARED_VAR: Undeclared variable: NaN
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_SP_UNDECLARED_VAR',
+  errno: 1327,
+  sqlMessage: 'Undeclared variable: NaN',
+  sqlState: '42000',
+  index: 0,
+  sql: 'SELECT * FROM annual_basic limit NaN,10' }
+[2018-12-26T11:14:58.390] [INFO] log_file - { Error: ER_SP_UNDECLARED_VAR: Undeclared variable: NaN
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_SP_UNDECLARED_VAR',
+  errno: 1327,
+  sqlMessage: 'Undeclared variable: NaN',
+  sqlState: '42000',
+  index: 0,
+  sql: 'SELECT * FROM annual_basic limit NaN,10' }
+[2018-12-26T12:53:56.995] [INFO] log_file - { Error: ER_NO_SUCH_TABLE: Table 'wx_signin.authority' doesn't exist
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlMessage: 'Table \'wx_signin.authority\' doesn\'t exist',
+  sqlState: '42S02',
+  index: 0,
+  sql: 'SELECT * FROM authority' }
+[2018-12-26T12:54:20.001] [INFO] log_file - { Error: ER_NO_SUCH_TABLE: Table 'wx_signin.authority' doesn't exist
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlMessage: 'Table \'wx_signin.authority\' doesn\'t exist',
+  sqlState: '42S02',
+  index: 0,
+  sql: 'SELECT * FROM authority' }
+[2018-12-26T12:54:23.027] [INFO] log_file - { Error: ER_NO_SUCH_TABLE: Table 'wx_signin.authority' doesn't exist
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Ping.onOperationComplete (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlMessage: 'Table \'wx_signin.authority\' doesn\'t exist',
+  sqlState: '42S02',
+  index: 0,
+  sql: 'SELECT * FROM authority' }
+[2018-12-26T14:44:31.264] [INFO] log_file - { Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(content,news_time) VALUE("11","2018-12-26 14:44:31")' at line 1
+    at Query.Sequence._packetToError (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\server\app.js:102:12
+    at Handshake.onConnect (D:\wx_demo\server\node_modules\mysql\lib\Pool.js:64:7)
+    at Handshake.<anonymous> (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:502:10)
+    at Handshake._callback (D:\wx_demo\server\node_modules\mysql\lib\Connection.js:468:16)
+    at Handshake.Sequence.end (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Handshake.Sequence.OkPacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'(content,news_time) VALUE("11","2018-12-26 14:44:31")\' at line 1',
+  sqlState: '42000',
+  index: 0,
+  sql: 'INSERT INTO(content,news_time) VALUE("11","2018-12-26 14:44:31")' }

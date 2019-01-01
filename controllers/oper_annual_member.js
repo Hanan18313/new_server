@@ -62,9 +62,15 @@ this.member_update = function(req,res){
     })
 }
 this.draw_empolyee_list = function(req,res){
-    ModOper_annual_member.draw_empolyee_list(function(result){
-        res.send({
-            result:result,
+    var params = url.parse(req.url,true).query
+    var pageNum = params.pageNum;
+    var pageSize = params.pageSize
+    ModOper_annual_member.draw_empolyee_list(pageNum,pageSize,function(result){
+        ModOper_annual_member.draw_empolyee_total(function(result1){
+            res.send({
+                result:result,
+                result1:result1[0]['COUNT(*)']
+            })
         })
     })
 }
@@ -106,7 +112,7 @@ this.draw_empolyee_prize = function(req,res){
 this.draw_family_list = function(req,res){
     var imgUrl = CONFIG.imgUrl
     var category = url.parse(req.url,true).query.category
-    ModOper_annual_member.draw_family_list(category,function(result){
+    ModOper_annual_member.draw_family_list(function(result){
         for(let i = 0; i < result.length; i++){
             result[i].imgUrl = imgUrl+result[i].imgUrl
         }
@@ -116,36 +122,71 @@ this.draw_family_list = function(req,res){
 this.draw_family_prize = function(req,res){
     var prize_id  = url.parse(req.url,true).query.prize_id
     var imgUrl = CONFIG.imgUrl
-    var promise_p = new Promise((resolve,reject) =>{
-        ModOper_annual_member.draw_family_prize(prize_id,function(result){
-            result[0].imgUrl = imgUrl + result[0].imgUrl
-            resolve(result)
-        })
-    }).then(result => result)
-    .catch(e => LOG(e))
-    var promise_d = new Promise((resolve,reject) =>{
-        ModOper_annual_member.draw_family_d(prize_id,function(result){
-            resolve(result)
-        })
-    }).then(result => result)
-    .catch(e => LOG(e))
-    Promise.all([promise_p,promise_d]).then(result =>{
-        var arr = flatten(result)
-        function flatten(arr){
-            return [].concat(...arr.map(x => Array.isArray(x) ? flatten(x) : x))
+    ModOper_annual_member.check_draw(prize_id,function(result){
+        if(result[0].signIn_id != null){
+            ModOper_annual_member.draw_family_d(prize_id,function(result){
+                result[0].imgUrl = CONFIG.imgUrl+result[0].imgUrl
+                res.send({
+                    result:result,
+                    value:1
+                })
+            })
+        }else{
+            ModOper_annual_member.draw_family_prize(prize_id,function(result){
+                result[0].imgUrl = CONFIG.imgUrl+result[0].imgUrl
+                res.send({
+                    result:result,
+                    value:0
+                })
+            })
         }
-        res.send(arr)
-    }).catch(e => LOG(e))
+    })
 }
+// this.draw_family_prize = function(req,res){
+//     var prize_id  = url.parse(req.url,true).query.prize_id
+//     var imgUrl = CONFIG.imgUrl
+//     var promise_p = new Promise((resolve,reject) =>{
+//         ModOper_annual_member.draw_family_prize(prize_id,function(result){
+//             result[0].imgUrl = imgUrl + result[0].imgUrl
+//             resolve(result)
+//         })
+//     }).then(result => result)
+//     .catch(e => LOG(e))
+//     var promise_d = new Promise((resolve,reject) =>{
+//         ModOper_annual_member.draw_family_d(prize_id,function(result){
+//             resolve(result)
+//         })
+//     }).then(result => result)
+//     .catch(e => LOG(e))
+//     Promise.all([promise_p,promise_d]).then(result =>{
+//         var arr = flatten(result)
+//         function flatten(arr){
+//             return [].concat(...arr.map(x => Array.isArray(x) ? flatten(x) : x))// 多维数组编一维数组 flatten() 数组平铺
+//         }
+//         res.send(arr)
+//         console.log(arr)
+//     }).catch(e => LOG(e))
+// }
 this.draw_update_f = function(req,res){
     var prize_id = req.body.prize_id,
         signIn_id = req.body.signIn_id
-        ModOper_annual_member.draw_update_f(prize_id,signIn_id,function(result){
-            res.send({
-                code:200,
-                msg:'更新成功',
-            })
+        ModOper_annual_member.check_family(signIn_id,function(result){
+            if(result.length > 0){
+                var openid = result[0].open_id
+                ModOper_annual_member.draw_update_f(prize_id,signIn_id,openid,function(result){
+                    res.send({
+                        code:200,
+                        msg:'更新成功',
+                    })
+                })
+            }else{
+                res.send({
+                    code:404,
+                    msg:'暂无此抽奖号'
+                })
+            }
         })
+    
 }
 this.audit_list = function(req,res){
     var params = url.parse(req.url,true).query
@@ -175,22 +216,12 @@ this.audit_update = function(req,res){
     var day = new Date().getHours() +':'+ new Date().getMinutes() +':'+ new Date().getSeconds();
     var year = new Date().getFullYear() +'-'+ (new Date().getMonth()+1) +'-'+ new Date().getDate()
     var time = year +' '+ day;
-    if(status == 1){
-        var random_code = base.random_code(6)
-        ModOper_annual_member.audit_update_code(openid,status,time,random_code,function(result){
-            res.send({
-                code:200,
-                msg:'更新成功',
-            })
+    ModOper_annual_member.audit_update(openid,status,time,function(result){
+        res.send({
+            code:200,
+            msg:'更新成功',
         })
-    }else{
-        ModOper_annual_member.audit_update(openid,status,time,function(result){
-            res.send({
-                code:200,
-                msg:'更新成功',
-            })
-        })
-    }
+    })
 }
 this.authority_list = function(req,res){
     ModOper_annual_member.authority_list(function(result){
@@ -217,6 +248,50 @@ this.authority = function(req,res){
         obj.status = 1
     }
     ModOper_annual_member.authority(obj,function(result){
+        res.send({
+            code:200,
+            msg:'更新成功'
+        })
+    })
+}
+this.news = function(req,res){
+    var news = req.body.news
+    var time = req.body.time
+    ModOper_annual_member.news(news,time,function(result){
+        ModOper_annual_member.news_num(function(news_num){
+             res.send({
+                 code:200,
+                 msg:'更新成功'
+             })
+        })
+    })
+}
+this.news_list = function(req,res){
+    ModOper_annual_member.news_list(function(result){
+        // new Promise((resolve,reject) =>{
+            for(let i = 0; i < result.length; i++){
+                result[i].news_time = base.formatDate(result[i].news_time)
+            }
+            res.send(result)
+        // })
+    })
+}
+this.meeting = function(req,res){
+    ModOper_annual_member.meeting(function(result){
+        res.send(result)
+    })
+}
+this.put_meeting = function(req,res){
+    var params = req.body
+    var obj = {
+        start_time:base.formatDate(params.start_time),
+        place:params.place,
+        note:params.note,
+        meeting_status:params.meeting_status,
+        lat:params.LatLng.lat,
+        lng:params.LatLng.lng
+    }
+    ModOper_annual_member.put_meeting(obj,function(result){
         res.send({
             code:200,
             msg:'更新成功'

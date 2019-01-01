@@ -1,0 +1,44 @@
+[2018-12-29T16:33:19.360] [INFO] log_file - { Error: connect ETIMEDOUT 121.51.130.115:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  syscall: 'connect',
+  address: '121.51.130.115',
+  port: 443 }
+[2018-12-29T16:34:45.192] [INFO] log_file - { Error: connect ETIMEDOUT 121.51.130.115:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  syscall: 'connect',
+  address: '121.51.130.115',
+  port: 443 }
+[2018-12-29T16:35:13.752] [INFO] log_file - { Error: read ECONNRESET
+    at TLSWrap.onread (net.js:622:25) errno: 'ECONNRESET', code: 'ECONNRESET', syscall: 'read' }
+[2018-12-29T16:35:48.915] [INFO] log_file - { Error: connect ETIMEDOUT 121.51.130.115:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  syscall: 'connect',
+  address: '121.51.130.115',
+  port: 443 }
+[2018-12-29T16:36:55.948] [INFO] log_file - { Error: socket hang up
+    at createHangUpError (_http_client.js:331:15)
+    at TLSSocket.socketOnEnd (_http_client.js:423:23)
+    at emitNone (events.js:111:20)
+    at TLSSocket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:139:11)
+    at process._tickCallback (internal/process/next_tick.js:181:9) code: 'ECONNRESET' }
+[2018-12-29T16:37:32.852] [INFO] log_file - { Error: socket hang up
+    at TLSSocket.onHangUp (_tls_wrap.js:1148:19)
+    at Object.onceWrapper (events.js:313:30)
+    at emitNone (events.js:111:20)
+    at TLSSocket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:139:11)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+  code: 'ECONNRESET',
+  path: null,
+  host: 'api.weixin.qq.com',
+  port: 443,
+  localAddress: undefined }

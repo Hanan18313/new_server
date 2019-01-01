@@ -58,5 +58,16 @@ module.exports = function(app){
     app.put('/oper/authority',function(req,res,next){
         ConOper_annual_member.authority(req,res,next)
     })
-
+    app.post('/oper/news',function(req,res,next){
+        ConOper_annual_member.news(req,res,next)
+    })
+    app.get('/oper/news',function(req,res,next){
+        ConOper_annual_member.news_list(req,res,next)
+    })
+    app.get('/oper/meeting',function(req,res,next){
+        ConOper_annual_member.meeting(req,res,next)
+    })
+    app.put('/oper/meeting',function(req,res,next){
+        ConOper_annual_member.put_meeting(req,res,next)
+    })
 }

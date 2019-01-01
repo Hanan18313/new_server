@@ -46,9 +46,15 @@ this.formatDate =  function formatDate(time){
 /** 
  * 当前时间
 */
-this.now_time = function(){
+this.now_time = function Now_time(){
     var day = new Date().getHours() +':'+ new Date().getMinutes() +':'+ new Date().getSeconds();
     var year = new Date().getFullYear() +'-'+ (new Date().getMonth()+1) +'-'+ new Date().getDate()
     var signIn_time = year +' '+ day;
     return signIn_time
+}
+/**
+ * 多维数组转换一维数组 
+ * */
+this.Flatten =  function flatten(arr){
+    return [].concat(...arr.map(x => Array.isArray(x) ? flatten(x) : x))
 }
