@@ -235,7 +235,7 @@ this.audit_list = function(page,pageSize,callback){
     })  
 }
 this.audit_list_total = function(callback){
-    let str = 'SELECT COUNT(*) FROM annual_basic';
+    let str = 'SELECT COUNT(*) FROM annual_basic WHERE status = 1';
     CON(str,function(err,result){
         if(err){
             LOG(err)
