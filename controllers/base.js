@@ -67,3 +67,10 @@ this.now_time = function Now_time(){
 this.Flatten =  function flatten(arr){
     return [].concat(...arr.map(x => Array.isArray(x) ? flatten(x) : x))
 }
+this.getMaxMin = function GetMaxMin(arr,maxmin){
+    if(maxmin == "max"){
+        return Math.max.apply(Math,arr)
+    }else if(maxmin == "min"){
+        return Math.min.apply(Math,arr)
+    }
+}

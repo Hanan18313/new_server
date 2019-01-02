@@ -104,7 +104,7 @@ this.join_status = function(openid,callback){
 }
 this.subscribe = function(page,pageSize,callback){
     var startPage = Number((page-1)*pageSize);
-    let str = 'SELECT * FROM annual_basic limit '+startPage+','+pageSize;
+    let str = 'SELECT * FROM annual_basic WHERE status = "1" limit '+startPage+','+pageSize;
     CON(str,function(err,result){
         if(err){
             LOG(err)
@@ -124,7 +124,7 @@ this.before_pool = function(callback){
     })
 }
 this.search_sub = function(value,callback){
-    let str = 'SELECT * FROM annual_basic WHERE user_name LIKE "%'+value+'%"';
+    let str = 'SELECT * FROM annual_basic WHERE user_name LIKE "%'+value+'%" AND status = "1"';
     CON(str,function(err,result){
         if(err){
             LOG(err)
@@ -155,7 +155,7 @@ this.basicRead_time = function(openid,read_time,callback){
 }
 //参加年会人员统计
 this.person_total = function(openid,callback){
-    let str = 'SELECT id FROM annual_basic WHERE open_id = "'+openid+'"';
+    let str = 'SELECT id FROM annual_basic WHERE open_id = "'+openid+'" AND status = "1"';
     //let str = 'SELECT * FROM annual_basic'
     CON(str,function(err,result){
         if(err){

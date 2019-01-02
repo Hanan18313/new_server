@@ -214,15 +214,18 @@ this.join_status = function(req,res){
                     resolve()
                 }).then(() =>{
                     for(let i = 0; i < result_class.length; i++){
-                        id_arr.push(result_class[i].id)
-                        if(result_class[i].category == 1){
-                            employee_total++;
-                        }else if(result_class[i].category == 2){
-                            family_total++;
+                        if(result_class[i].status == 1){
+                            id_arr.push(result_class[i].id)
+                            if(result_class[i].category == 1){
+                                employee_total++;
+                            }else if(result_class[i].category == 2){
+                                family_total++;
+                            }
                         }
+                        
                     }
                 }).then(() =>{
-                    result_total = result_total[0].id - Math.min(id_arr[0])
+                    result_total = result_total[0].id - base.getMaxMin(id_arr,"min")
                     res.send({
                         result:result,
                         result_total:result_total+1,
