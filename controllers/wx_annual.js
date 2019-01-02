@@ -124,51 +124,51 @@ Rule4.minute = [20,14,25,12]
 //         }
 //     })
 // })
-schedule.scheduleJob('0 38 9 28 12 *',function(){
-    LOG(base.formatDate(new Date())+'执行的此任务')
-    Mod_annual.meeting_info(function(result){
-        if(result[0].meeting_status == 1){
-            let status = 2
-            Mod_annual.meeting_status(status)
-        }else if(result[0].meeting_status == 2){
-            let status = 3
-            Mod_annual.meeting_status(status)
-        }else{
-            let status = 1
-            Mod_annual.meeting_status(status)
-        }
-    })
-})
-schedule.scheduleJob('10 38 9 28 12 *',function(){
-    LOG(base.formatDate(new Date())+'执行的此任务')
-    Mod_annual.meeting_info(function(result){
-        if(result[0].meeting_status == 1){
-            let status = 2
-            Mod_annual.meeting_status(status)
-        }else if(result[0].meeting_status == 2){
-            let status = 3
-            Mod_annual.meeting_status(status)
-        }else{
-            let status = 1
-            Mod_annual.meeting_status(status)
-        }
-    })
-})
-schedule.scheduleJob('30 38 9 28 12 *',function(){
-    LOG(base.formatDate(new Date())+'执行的此任务')
-    Mod_annual.meeting_info(function(result){
-        if(result[0].meeting_status == 1){
-            let status = 2
-            Mod_annual.meeting_status(status)
-        }else if(result[0].meeting_status == 2){
-            let status = 3
-            Mod_annual.meeting_status(status)
-        }else{
-            let status = 1
-            Mod_annual.meeting_status(status)
-        }
-    })
-})
+// schedule.scheduleJob('0 38 9 28 12 *',function(){
+//     LOG(base.formatDate(new Date())+'执行的此任务')
+//     Mod_annual.meeting_info(function(result){
+//         if(result[0].meeting_status == 1){
+//             let status = 2
+//             Mod_annual.meeting_status(status)
+//         }else if(result[0].meeting_status == 2){
+//             let status = 3
+//             Mod_annual.meeting_status(status)
+//         }else{
+//             let status = 1
+//             Mod_annual.meeting_status(status)
+//         }
+//     })
+// })
+// schedule.scheduleJob('10 38 9 28 12 *',function(){
+//     LOG(base.formatDate(new Date())+'执行的此任务')
+//     Mod_annual.meeting_info(function(result){
+//         if(result[0].meeting_status == 1){
+//             let status = 2
+//             Mod_annual.meeting_status(status)
+//         }else if(result[0].meeting_status == 2){
+//             let status = 3
+//             Mod_annual.meeting_status(status)
+//         }else{
+//             let status = 1
+//             Mod_annual.meeting_status(status)
+//         }
+//     })
+// })
+// schedule.scheduleJob('30 38 9 28 12 *',function(){
+//     LOG(base.formatDate(new Date())+'执行的此任务')
+//     Mod_annual.meeting_info(function(result){
+//         if(result[0].meeting_status == 1){
+//             let status = 2
+//             Mod_annual.meeting_status(status)
+//         }else if(result[0].meeting_status == 2){
+//             let status = 3
+//             Mod_annual.meeting_status(status)
+//         }else{
+//             let status = 1
+//             Mod_annual.meeting_status(status)
+//         }
+//     })
+// })
 
 
 this.v_code = function(req,res){
@@ -222,10 +222,7 @@ this.join_status = function(req,res){
                         }
                     }
                 }).then(() =>{
-                     console.log(Math.min(id_arr[0]))
-                     console.log(result_total[0].id)
                     result_total = result_total[0].id - Math.min(id_arr[0])
-                    console.log(result_total)
                     res.send({
                         result:result,
                         result_total:result_total+1,
