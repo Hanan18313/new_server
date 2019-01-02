@@ -222,9 +222,10 @@ this.join_status = function(req,res){
                         }
                     }
                 }).then(() =>{
-                    // console.log(Math.min(id_arr[0]))
-                    // console.log(result_total[0].id)
+                     console.log(Math.min(id_arr[0]))
+                     console.log(result_total[0].id)
                     result_total = result_total[0].id - Math.min(id_arr[0])
+                    console.log(result_total)
                     res.send({
                         result:result,
                         result_total:result_total+1,
