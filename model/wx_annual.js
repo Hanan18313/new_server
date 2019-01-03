@@ -166,7 +166,7 @@ this.person_total = function(openid,callback){
     })
 }
 this.person_class = function(callback){
-    let str = 'SELECT * FROM annual_basic';
+    let str = 'SELECT * FROM annual_basic ORDER BY id ASC';
     CON(str,function(err,result){
         if(err){
             LOG(err)

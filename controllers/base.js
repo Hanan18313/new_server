@@ -74,3 +74,15 @@ this.getMaxMin = function GetMaxMin(arr,maxmin){
         return Math.min.apply(Math,arr)
     }
 }
+this.getArrIndex = function(arr, obj) {
+    let index = null;
+    let key = Object.keys(obj)[0];
+    arr.every(function(value, i) {
+        if (value[key] === obj[key]) {
+            index = i;
+            return false;
+        }
+        return true;
+    });
+    return index;
+};

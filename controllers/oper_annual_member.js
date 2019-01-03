@@ -190,7 +190,7 @@ this.draw_update_f = function(req,res){
 }
 this.audit_list = function(req,res){
     var params = url.parse(req.url,true).query
-    var page = params.page?Number(params.page):1
+    var page = params.pageNum?Number(params.pageNum):1
     var pageSize = params.pageSize?Number(params.pageSize):10
     ModOper_annual_member.audit_list(page,pageSize,function(result1){
         ModOper_annual_member.audit_list_total(function(result){

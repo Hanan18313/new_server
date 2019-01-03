@@ -215,7 +215,7 @@ this.join_status = function(req,res){
                 }).then(() =>{
                     for(let i = 0; i < result_class.length; i++){
                         if(result_class[i].status == 1){
-                            id_arr.push(result_class[i].id)
+                            id_arr.push(result_class[i].open_id)
                             if(result_class[i].category == 1){
                                 employee_total++;
                             }else if(result_class[i].category == 2){
@@ -225,7 +225,9 @@ this.join_status = function(req,res){
                         
                     }
                 }).then(() =>{
-                    result_total = result_total[0].id - base.getMaxMin(id_arr,"min")
+                    var result_total = id_arr.indexOf(openid)
+                    //res.send(id_arr)
+                   // result_total = result_total[0].id - base.getMaxMin(id_arr,"min")
                     res.send({
                         result:result,
                         result_total:result_total+1,
