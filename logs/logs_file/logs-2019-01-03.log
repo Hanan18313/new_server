@@ -26,3 +26,31 @@
   sqlState: '42000',
   index: 0,
   sql: 'SELECT * FROM annual_basic ORDER BY id ACS' }
+[2019-01-03T14:10:06.002] [INFO] log_file - { Error: ER_NO_SUCH_TABLE: Table 'wx_signin.evoluation' doesn't exist
+    at Query.Sequence._packetToError (C:\wx_node\new_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\wx_node\new_server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (C:\wx_node\new_server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (C:\wx_node\new_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (C:\wx_node\new_server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\wx_node\new_server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (C:\wx_node\new_server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (C:\wx_node\new_server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (C:\wx_node\new_server\node_modules\mysql\lib\Connection.js:200:25)
+    at C:\wx_node\new_server\app.js:102:12
+    at Ping.onOperationComplete (C:\wx_node\new_server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (C:\wx_node\new_server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (C:\wx_node\new_server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (C:\wx_node\new_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (C:\wx_node\new_server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (C:\wx_node\new_server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (C:\wx_node\new_server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlMessage: 'Table \'wx_signin.evoluation\' doesn\'t exist',
+  sqlState: '42S02',
+  index: 0,
+  sql: 'SELECT * FROM evoluation INNER JOIN annual_member ON evoluation.open_id = annual_member.open_id' }

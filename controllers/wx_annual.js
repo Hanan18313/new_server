@@ -271,22 +271,29 @@ this.search_sub = function(req,res){
 this.read_news = function(req,res){
     var openid = url.parse(req.url,true).query.openid
     var arr = []
-    Mod_annual.baseUserInfo(openid,function(result){
-        if(result[0]['read_time'] != null){
-            Mod_annual.read_news(function(result_news){
-                new Promise((resolve,reject) =>{
-                    resolve()
-                }).then(() =>{
-                    for(let i = 0; i < result_news.length; i++){
-                        if(result_news[i].news_time >= result[0].read_time){
-                            result_news[i].news_time = base.formatDate(result_news[i].news_time)
-                            arr.push(result_news[i])
+    Mod_annual.person_info(openid,function(result){
+        if(result.length > 0){
+            if(result[0].read_time != null){
+                Mod_annual.read_news(function(result_news){
+                    new Promise((resolve,reject) =>{
+                        resolve()
+                    }).then(() =>{
+                        for(let i = 0; i < result_news.length; i++){
+                            if(result_news[i].news_time >= result[0].read_time){
+                                result_news[i].news_time = base.formatDate(result_news[i].news_time)
+                                arr.push(result_news[i])
+                            }
                         }
-                    }
-                }).then(() =>{
-                    res.send(arr)
+                    }).then(() =>{
+                        res.send(arr)
+                    })
                 })
-            })
+            }else{
+                res.send({
+                    code:200,
+                    msg:'暂无更新'
+                })
+            }
         }else{
             res.send({
                 code:200,
